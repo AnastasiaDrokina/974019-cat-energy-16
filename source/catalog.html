@@ -5,201 +5,255 @@
     <title>HTML Academy: Кэт энерджи</title>
   </head>
   <body>
-    <header class="page-header">
-      <a class="page-header__logo" aria-label="Логотип Cat Energy">
-        <img class="page-header__logo-image" scr="http://placehold.it/150x100" width="" height="" alt="Логотип Cat Energy">
-      </a>
-      <nav class="main-nav"></nav>
+    <header class="header">
+      <div class="container">
+        <a class="header__logo" href="/index.html" aria-label="Логотип Cat Energy">
+          <img class="header__logo-image" src="http://placehold.it/128x24" width="128" height="24" alt="Логотип Cat Energy">
+        </a>
+        <nav class="nav"></nav>
+      </div>
     </header>
     <main>
-      <section>
-      <h1>Каталог продукции</h1>
-      <h2>Основная продукция</h2>
-      <ul>
-        <li>
-          <h3>Cat Enerdgy Pro 500 г</h3>
-          <img src="http://placehold.it/150x100" width="" height="" alt="Cat Enerdgy Pro 500г Курица">
-          <ul>
-            <li>
-              <span>Объем</span>
-              <span>500 г</span>
-            </li>
-            <li>
-              <span>Вкус</span>
-              <span>Курица</span>
-            </li>
-            <li>
-              <span>Цена</span>
-              <span>700 Р.</span>
-            </li>
-          </ul>
-        </li>
-        <button type="submit">Закрыть</button>
-        <li>
-          <h3>Cat Enerdgy Pro 1000 г</h3>
-          <img src="http://placehold.it/150x100" width="" height="" alt="Cat Enerdgy Pro 1000г Курица">
-          <ul>
-            <li>
-              <span>Объем</span>
-              <span>1000 г</span>
-            </li>
-            <li>
-              <span>Вкус</span>
-              <span>Курица</span>
-            </li>
-            <li>
-              <span>Цена</span>
-              <span>1000 Р.</span>
-            </li>
-          </ul>
-        </li>
-        <button type="submit">Закрыть</button>
-        <li>
-          <h3>Cat Enerdgy Pro 500 г</h3>
-          <img src="http://placehold.it/150x100" width="" height="" alt="Cat Enerdgy Pro 500г Рыба">
-          <ul>
-            <li>
-              <span>Объем</span>
-              <span>500 г</span>
-            </li>
-            <li>
-              <span>Вкус</span>
-              <span>Рыба</span>
-            </li>
-            <li>
-              <span>Цена</span>
-              <span>700 Р.</span>
-            </li>
-          </ul>
-        </li>
-        <button type="submit">Закрыть</button>
-        <li>
-          <h3>Cat Enerdgy Pro 1000 г</h3>
-          <img src="http://placehold.it/150x100" width="" height="" alt="Cat Enerdgy Pro 1000г Рыба">
-          <ul>
-            <li>
-              <span>Объем</span>
-              <span>1000 г</span>
-            </li>
-            <li>
-              <span>Вкус</span>
-              <span>Рыба</span>
-            </li>
-            <li>
-              <span>Цена</span>
-              <span>1000 Р.</span>
-            </li>
-          </ul>
-        </li>
-        <button type="submit">Закрыть</button>
-        <li>
-          <h3>Cat Enerdgy Slim 500 г</h3>
-          <img src="http://placehold.it/150x100" width="" height="" alt="Cat Enerdgy Slim 500г Гречка">
-          <ul>
-            <li>
-              <span>Объем</span>
-              <span>500 г</span>
-            </li>
-            <li>
-              <span>Вкус</span>
-              <span>Гречка</span>
-            </li>
-            <li>
-              <span>Цена</span>
-              <span>400 Р.</span>
-            </li>
-          </ul>
-        </li>
-        <button type="submit">Закрыть</button>
-        <li>
-          <h3>Cat Enerdgy Slim 1000 г </h3>
-          <img src="http://placehold.it/150x100" width="" height="" alt="Cat Enerdgy Slim 1000г Гречка">
-          <ul>
-            <li>
-              <span>Объем</span>
-              <span>1000 г</span>
-            </li>
-            <li>
-              <span>Вкус</span>
-              <span>Гречка</span>
-            </li>
-            <li>
-              <span>Цена</span>
-              <span>700 Р.</span>
-            </li>
-          </ul>
-        </li>
-        <button type="submit">Закрыть</button>
-        <li>
-          <h3>Cat Enerdgy Slim 500 г</h3>
-          <img src="http://placehold.it/150x100" width="" height="" alt="Cat Enerdgy Slim 500г Рис">
-          <ul>
-            <li>
-              <span>Объем</span>
-              <span>500 г</span>
-            </li>
-            <li>
-              <span>Вкус</span>
-              <span>Рис</span>
-            </li>
-            <li>
-              <span>Цена</span>
-              <span>500 Р.</span>
-            </li>
-          </ul>
-        </li>
-        <button type="submit">Закрыть</button>
-      </ul>
-      <p>Показать ещё 100500 товаров</p>
-      <p>На самом деле вкусов гораздо больше!</p>
-      <button type="button">Показать всё</button>
+      <section class="section">
+        <div class="container">
+          <h1 class="section__title section__title--big">Каталог продукции</h1>
+          <h2 class="section__title visually-hidden">Основная продукция</h2>
+          <div class="products">
+            <ul class="products__list">
+              <li class="products__item">
+                <article class="product">
+                  <h3 class="product__title">Cat Energy Pro 500 г</h3>
+                  <img class="product__image" src="http://placehold.it/140x144" width="140" height="144" alt="Cat Energy Pro 500г Курица">
+                  <ul class="product__list">
+                    <li class="product__item">
+                      <span class="product__info">Объем</span>
+                      <span class="product__info">500 г</span>
+                    </li>
+                    <li class="product__item">
+                      <span class="product__info">Вкус</span>
+                      <span class="product__info">Курица</span>
+                    </li>
+                    <li class="product__item">
+                      <span class="product__info">Цена</span>
+                      <span class="product__info">700 Р.</span>
+                    </li>
+                  </ul>
+                  <button class="button">Заказать</button>
+                </article>
+              </li>
+              <li class="products__item">
+                <article class="product">
+                  <h3 class="product__title">Cat Energy Pro 1000 г</h3>
+                  <img class="product__image" src="http://placehold.it/140x144" width="140" height="144" alt="Cat Energy Pro 1000г Курица">
+                  <ul class="product__list">
+                    <li class="product__item">
+                      <span class="product__info">Объем</span>
+                      <span class="product__info">1000 г</span>
+                    </li>
+                    <li class="product__item">
+                      <span class="product__info">Вкус</span>
+                      <span class="product__info">Курица</span>
+                    </li>
+                    <li class="product__item">
+                      <span class="product__info">Цена</span>
+                      <span class="product__info">1000 Р.</span>
+                    </li>
+                  </ul>
+                  <button class="button">Заказать</button>
+                </article>
+              </li>
+              <li class="products__item">
+                <article class="product">
+                  <h3 class="product__title">Cat Energy Pro 500 г</h3>
+                  <img class="product__image" src="http://placehold.it/140x144" width="140" height="144" alt="Cat Energy Pro 500г Рыба">
+                  <ul class="product__list">
+                    <li class="product__item">
+                      <span class="product__info">Объем</span>
+                      <span class="product__info">500 г</span>
+                    </li>
+                    <li class="product__item">
+                      <span class="product__info">Вкус</span>
+                      <span class="product__info">Рыба</span>
+                    </li>
+                    <li class="product__item">
+                      <span class="product__info">Цена</span>
+                      <span class="product__info">700 Р.</span>
+                    </li>
+                  </ul>
+                  <button class="button">Заказать</button>
+                </article>
+              </li>
+              <li class="products__item">
+                <article class="product">
+                  <h3 class="product__title">Cat Energy Pro 1000 г</h3>
+                  <img class="product__image" src="http://placehold.it/140x144" width="140" height="144" alt="Cat Energy Pro 1000г Рыба">
+                  <ul class="product__list">
+                    <li class="product__item">
+                      <span class="product__info">Объем</span>
+                      <span class="product__info">1000 г</span>
+                    </li>
+                    <li class="product__item">
+                      <span class="product__info">Вкус</span>
+                      <span class="product__info">Рыба</span>
+                    </li>
+                    <li class="product__item">
+                      <span class="product__info">Цена</span>
+                      <span class="product__info">1000 Р.</span>
+                    </li>
+                  </ul>
+                  <button class="button">Заказать</button>
+                </article>
+              </li>
+              <li class="products__item">
+                <article class="product">
+                  <h3 class="product__title">Cat Energy Pro 500 г</h3>
+                  <img class="product__image" src="http://placehold.it/140x144" width="140" height="144" alt="Cat Energy Pro 500г Гречка">
+                  <ul class="product__list">
+                    <li class="product__item">
+                      <span class="product__info">Объем</span>
+                      <span class="product__info">500 г</span>
+                    </li>
+                    <li class="product__item">
+                      <span class="product__info">Вкус</span>
+                      <span class="product__info">Гречка</span>
+                    </li>
+                    <li class="product__item">
+                      <span class="product__info">Цена</span>
+                      <span class="product__info">400 Р.</span>
+                    </li>
+                  </ul>
+                  <button class="button">Заказать</button>
+                </article>
+              </li>
+              <li class="products__item">
+                <article class="product">
+                  <h3 class="product__title">Cat Energy Pro 1000 г</h3>
+                  <img class="product__image" src="http://placehold.it/140x144" width="140" height="144" alt="Cat Energy Pro 1000г Гречка">
+                  <ul class="product__list">
+                    <li class="product__item">
+                      <span class="product__info">Объем</span>
+                      <span class="product__info">1000 г</span>
+                    </li>
+                    <li class="product__item">
+                      <span class="product__info">Вкус</span>
+                      <span class="product__info">Гречка</span>
+                    </li>
+                    <li class="product__item">
+                      <span class="product__info">Цена</span>
+                      <span class="product__info">700 Р.</span>
+                    </li>
+                  </ul>
+                  <button class="button">Заказать</button>
+                </article>
+              </li>
+              <li class="products__item">
+                <article class="product">
+                  <h3 class="product__title">Cat Energy Pro 500 г</h3>
+                  <img class="product__image" src="http://placehold.it/140x144" width="140" height="144" alt="Cat Energy Pro 500г Рис">
+                  <ul class="product__list">
+                    <li class="product__item">
+                      <span class="product__info">Объем</span>
+                      <span class="product__info">500 г</span>
+                    </li>
+                    <li class="product__item">
+                      <span class="product__info">Вкус</span>
+                      <span class="product__info">Рис</span>
+                    </li>
+                    <li class="product__item">
+                      <span class="product__info">Цена</span>
+                      <span class="product__info">500 Р.</span>
+                    </li>
+                  </ul>
+                  <button class="button">Заказать</button>
+                </article>
+              </li>
+            </ul>
+          </div>
+          <p>Показать ещё 100500 товаров</p>
+          <p>На самом деле вкусов гораздо больше!</p>
+          <button type="button">Показать всё</button>
+        </div>
       </section>
-      <section>
-        <h2>Дополнительные товары</h2>
-        <ul>
-          <li>
-            <h3>Сахарозаменитель</h3>
-            <span>1 упаковка (100 г)</span>
-            <span>100 Р.</span>
-          </li>
-          <button type="submit">Заказать</button>
-          <li>
-            <h3>Питьевая вода</h3>
-            <span>5 литров</span>
-            <span>50 Р.</span>
-          </li>
-          <button type="submit">Заказать</button>
-          <li>
-            <h3>Молоко</h3>
-            <span>1 литр</span>
-            <span>100 Р.</span>
-          </li>
-          <button type="submit">Заказать</button>
-          <li>
-            <h3>Витамины</h3>
-            <span>1 упаковка (30 г)</span>
-            <span>300 Р.</span>
-          </li>
-          <button type="submit">Заказать</button>
-        </ul>
-        <p>Закажи всё и получите чехол для кота в подарок!</p>
+      <section class="section">
+        <div class="container">
+          <h2 class="section__title">Дополнительные товары</h2>
+          <div class="products">
+            <ul class="products__list">
+              <li class="products__item">
+                <article class="product">
+                  <h3 class="product__title product__title--simple">Сахарозаменитель</h3>
+                  <ul class="product__list">
+                    <li class="product__item product__item--simple">
+                      <span class="product__info">1 упаковка (100 г)</span>
+                      <span class="product__info">100 Р.</span>
+                    </li>
+                  </ul>
+                  <button class="button">Заказать</button>
+                </article>
+              </li>
+              <li class="products__item">
+                <article class="product">
+                  <h3 class="product__title product__title--simple">Питьевая водаь</h3>
+                  <ul class="product__list">
+                    <li class="product__item product__item--simple">
+                      <span class="product__info">5 литров</span>
+                      <span class="product__info">50 Р.</span>
+                    </li>
+                  </ul>
+                  <button class="button">Заказать</button>
+                </article>
+              </li>
+              <li class="products__item">
+                <article class="product">
+                  <h3 class="product__title product__title--simple">Молоко</h3>
+                  <ul class="product__list">
+                    <li class="product__item product__item--simple">
+                      <span class="product__info">1 литр</span>
+                      <span class="product__info">100 Р.</span>
+                    </li>
+                  </ul>
+                  <button class="button">Заказать</button>
+                </article>
+              </li>
+              <li class="products__item">
+                <article class="product">
+                  <h3 class="product__title product__title--simple">Витамины</h3>
+                  <ul class="product__list">
+                    <li class="product__item product__item--simple">
+                      <span class="product__info">1 упаковка (30 г)</span>
+                      <span class="product__info">300 Р.</span>
+                    </li>
+                  </ul>
+                  <button class="button">Заказать</button>
+                </article>
+              </li>
+            </ul>
+          </div>
+          <p class="section__gift">Закажи всё и получите чехол для кота в подарок!</p>
+        </div>
       </section>
     </main>
-    <footer>
-      <p>Приглашаем к сотрудничеству дилеров!</p>
-      <p>ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
-      <div>
-        <img src="http://placehold.it/150x100"  width="" height="" alt="Приглашаем к сотрудничеству дилеров!">
-        <button class="modal-close" type="button">Закрыть</button>
+    <footer class="footer">
+      <div class="container">
+        <div class="map">
+          <p class="map__title">Приглашаем к сотрудничеству дилеров!</p>
+          <p class="map__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+          <div>
+            <img class="map__image" src="http://placehold.it/320x400"  width="320" height="400" alt=" Мы находимся по адресу: ул. Большая Конюшенная, д. 19/8 Санкт-Петербург">
+            <button class="map__button" type="button">Закрыть</button>
+          </div>
+        </div>
+        <img class="footer__logo" src="http://placehold.it/128x24" width="128" height="24" alt="Логотип Cat Energy">
+        <div class="socials">
+          <ul class="socials__list">
+            <li class="socials__item"><a class="socials__link" href="#" aria-label="Мы в Вконтакте"></a></li>
+            <li class="socials__item"><a class="socials__link" href="#" aria-label="Мы в Инстаграме"></a></li>
+            <li class="socials__item"><a class="socials__link" href="#" aria-label="Мы на Фейсбуке"></a></li>
+          </ul>
+        </div>
+        <a class="footer__creator" href="https://htmlacademy.ru/intensive/adaptive">Html Academy</a>
+        <a class="footer__creator-logo" href="https://htmlacademy.ru/intensive/adaptive" aria-label="Переход на страницу Html Academy"></a>
       </div>
-      <img scr="http://placehold.it/150x100" width="" height="" alt="Логотип Cat Energy">
-      <ul>
-        <li><a href="#" aria-label="Мы в Вконтакте"></a></li>
-        <li><a href="#" aria-label="Мы в Инстаграме"></a></li>
-        <li><a href="#" aria-label="Мы на Фейсбуке"></a></li>
-      </ul>
-      <p>Html Academy</p>
-      <a href="https://htmlacademy.ru/intensive/adaptive" aria-label="Переход на страницу Html Academy"></a>
     </footer>
   </body>
 </html>
