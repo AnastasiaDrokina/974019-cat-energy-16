@@ -12,7 +12,54 @@
       <nav class="main-nav"></nav>
     </header>
     <main>
-
+      <h1>Подбор программы</h1>
+      <p>Заполните анкету и мы подберем программу питания для вашего кота</p>
+      <form action="https://echo.htmlacademy.ru" method="post">
+        <fieldset>
+          <legend>Анкета вашего кота</legend>
+          <div>
+            <label for="name">Имя:*</label>
+            <input type="text" name="name-field" id="name" placeholder="Барсик">
+            <label for="weight">Вес (кг):*</label>
+            <input type="text" name="weight-field" id="weight" placeholder="7">
+            <label for="age">Возраст (лет):</label>
+            <input type="text" name="age-field" id="age" placeholder="7">
+          </div>
+          <div>
+            <input type="radio" name="plan" id="lose-weight" value="lose-weight"checked>
+            <label for="lose-weight">Похудение</label>
+            <input type="radio" name="plan" id="gain-weight" value="gain-weight">
+            <label for="gain-weight">Набор массы</label>
+            <input type="radio" name="plan" id="advice" value="advice">
+            <label for="advice">Не знаю (нужен ваш совет)</label>
+          </div>
+        </fieldset>
+        <fieldset>
+          <legend>Контактные данные (владельца кота)</legend>
+          <label for="email">E-mail:*</label>
+          <input type="email" name="email-field" id="email" placeholder="kuklachev@gmail.com">
+          <label for="phone">Телефон:*</label>
+          <input type="text" name="phone-field" id="phone" placeholder="8(960)900-60-90">
+        </fieldset>
+        <fieldset>
+          <legend>Комментарий</legend>
+          <label for="comment"></label>
+          <textarea name="comment-field" id="comment" placeholder="Расскажите обо всех повадках кота"></textarea>
+        </fieldset>
+        <fieldset>
+          <legend>Дополнительно</legend>
+          <input type="checkbox" name="sweetener-field" id="sweetener" checked>
+          <label for="sweetener">Сахарозаменитель</label>
+          <input type="checkbox" name="potable-field" id="potable-water">
+          <label for="potable-water">Питьевая вода</label>
+          <input type="checkbox" name="milk-field" id="milk">
+          <label for="milk">Молоко</label>
+          <input type="checkbox" name="vitamins-field" id="vitamins">
+          <label for="vitamins">Витамины</label>
+        </fieldset>
+        <button type="submit">Отправить заявку</button>
+        <p>*— Обязательные поля</p>
+      </form>
     </main>
     <footer>
       <p>Приглашаем к сотрудничеству дилеров!</p>
