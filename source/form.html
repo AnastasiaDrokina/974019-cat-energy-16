@@ -6,21 +6,36 @@
   </head>
   <body>
     <header class="header">
-      <div class="container">
-        <a class="header__logo" href="/index.html" aria-label="Логотип Cat Energy">
-          <img class="header__logo-image" src="http://placehold.it/128x24" width="128" height="24" alt="Логотип Cat Energy">
-        </a>
-        <nav class="nav"></nav>
-      </div>
-    </header>
+        <div class="container">
+          <a class="header__logo logo" href="index.html" aria-label="Логотип Cat Energy">
+            <img class="logo__image" src="http://placehold.it/128x24" width="128" height="24" alt="Логотип Cat Energy">
+          </a>
+          <nav class="nav  header__nav">
+            <button class="nav__toggle" type="button">Открыть меню</button>
+            <div class="nav__wrapper">
+              <ul class="nav__list">
+                <li class="nav__item">
+                  <a class="nav__link" href="index.html">Главная</a>
+                </li>
+                <li class="nav__item">
+                  <a class="nav__link" href="catalog.html">Каталог продукции</a>
+                </li>
+                <li class="nav__item">
+                  <a class="nav__link" href="form.html">Подбор программы</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+      </header>
     <main>
       <section class="section">
         <div class="container">
-          <h1 class="section__title section__title--big">Подбор программы</h1>
+          <h1 class="section__title  section__title--big">Подбор программы</h1>
           <p class="section__text">Заполните анкету и мы подберем программу питания для вашего кота</p>
           <form class="form" action="https://echo.htmlacademy.ru" method="post">
             <fieldset class="form__fieldset">
-              <legend class="form__legend visually-hidden">Анкета вашего кота</legend>
+              <legend class="form__legend  visually-hidden">Анкета вашего кота</legend>
               <div class="form__field">
                 <label class="form__label" for="name">Имя:*</label>
                 <input class="form__input" type="text" name="name-field" id="name" placeholder="Барсик">
@@ -34,7 +49,7 @@
                 <input class="form__input" type="text" name="age-field" id="age" placeholder="7">
               </div>
               <div class="form__field">
-                <input class="form__input" type="radio" name="plan" id="lose-weight" value="lose-weight"checked>
+                <input class="form__input" type="radio" name="plan" id="lose-weight" value="lose-weight" checked>
                 <label class="form__label" for="lose-weight">Похудение</label>
               </div>
               <div class="form__field">
@@ -91,7 +106,7 @@
     </main>
     <footer class="footer">
       <div class="container">
-        <div class="map">
+        <div class="footer__map  map">
           <p class="map__title">Приглашаем к сотрудничеству дилеров!</p>
           <p class="map__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
           <div>
@@ -99,16 +114,18 @@
             <button class="map__button" type="button">Закрыть</button>
           </div>
         </div>
-        <img class="footer__logo" src="http://placehold.it/128x24" width="128" height="24" alt="Логотип Cat Energy">
-        <div class="socials">
-          <ul class="socials__list">
-            <li class="socials__item"><a class="socials__link" href="#" aria-label="Мы в Вконтакте"></a></li>
-            <li class="socials__item"><a class="socials__link" href="#" aria-label="Мы в Инстаграме"></a></li>
-            <li class="socials__item"><a class="socials__link" href="#" aria-label="Мы на Фейсбуке"></a></li>
-          </ul>
+        <a class="footer__logo  logo" aria-label="Логотип Cat Energy">
+          <img class="logo__image" src="http://placehold.it/128x24" width="128" height="24" alt="Логотип Cat Energy">
+        </a>
+        <ul class="footer__socials  socials">
+          <li class="socials__item"><a class="socials__link  socials__link--vkontakte" href="#" aria-label="Мы в Вконтакте"></a></li>
+          <li class="socials__item"><a class="socials__link  socials__link--instagram" href="#" aria-label="Мы в Инстаграме"></a></li>
+          <li class="socials__item"><a class="socials__link  socials__link--facebook" href="#" aria-label="Мы на Фейсбуке"></a></li>
+        </ul>
+        <div class="footer__creator  creator">
+          <a class="creator__name" href="https://htmlacademy.ru/intensive/adaptive">Html Academy</a>
+          <a class="creator__logo" href="https://htmlacademy.ru/intensive/adaptive" aria-label="Переход на страницу Html Academy"></a>
         </div>
-        <a class="footer__creator" href="https://htmlacademy.ru/intensive/adaptive">Html Academy</a>
-        <a class="footer__creator-logo" href="https://htmlacademy.ru/intensive/adaptive" aria-label="Переход на страницу Html Academy"></a>
       </div>
     </footer>
   </body>
