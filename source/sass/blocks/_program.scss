@@ -1,0 +1,18 @@
+.program {
+  background: url(../img/index-background-mobile@1x.jpg) left top no-repeat transparent;
+}
+
+.program__title {
+  color: $white;
+  line-height: 36px;
+}
+
+.program__slogan {
+  @include font(14px, 14px, $font-regular, $white);
+  text-transform: uppercase;
+}
+
+.program__link {
+  @include font(14px, 18px, $font-regular, $white);
+  text-transform: uppercase;
+}

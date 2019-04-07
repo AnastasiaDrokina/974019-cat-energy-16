@@ -1,0 +1,8 @@
+.map__title {
+  @include font(16px, 20px, $font-regular, $black-two);
+  text-transform: uppercase;
+}
+
+.map__address {
+  @include font(14px, 20px)
+}

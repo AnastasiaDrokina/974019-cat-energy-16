@@ -1,0 +1,5 @@
+.gift {
+  @include font(16px, 20px, $font-sans-serif, $white);
+
+  background: url(../img/gift-photo-mobile@1x.jpg) left top no-repeat transparent;
+}

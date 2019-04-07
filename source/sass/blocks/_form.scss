@@ -1,0 +1,16 @@
+.form__label {
+  @include font(16px, 18px, $font-regular, $black);
+  text-transform: uppercase;
+
+  color: $black;
+}
+::placeholder {
+  @include font(16px, 18px, $font-regular, $brown);
+  text-transform: uppercase;
+
+  color: $brown;
+}
+
+.form__text {
+  @include font(14px, 16px);
+}
