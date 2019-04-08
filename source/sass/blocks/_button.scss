@@ -1,16 +1,21 @@
 .button {
-  padding: 0;
+  display: block;
+  padding: 12px 0;
+  width: 100%;
 
   @include font(16px, 20px, $font-regular, $white);
   text-transform: uppercase;
 
   background: $green;
   border: none;
+  text-align: center;
 
   cursor: pointer;
 }
 
 .button--more {
+  margin-bottom: 0;
+
   color: $brown;
 
   background: $grey;

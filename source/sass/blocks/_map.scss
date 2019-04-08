@@ -1,8 +1,15 @@
 .map__title {
+  margin: 0;
+  padding-top: 31px;
+
   @include font(16px, 20px, $font-regular, $black-two);
   text-transform: uppercase;
 }
 
 .map__address {
   @include font(14px, 20px)
+}
+
+.map__image {
+  margin-bottom: 39px;
 }

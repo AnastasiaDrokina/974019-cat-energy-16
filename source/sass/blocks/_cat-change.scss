@@ -1,6 +1,16 @@
 .cat-change {
+  padding: 33px 0 38px;
+
   background: $grey;
 }
+
+.cat-change__title {
+  margin-bottom: 33px;
+}
+
+ .cat-change__decription {
+   margin-bottom: 27px;
+ }
 
 .cat-change__details-title {
   @include font(24px, 24px);
@@ -11,8 +21,14 @@
 }
 
 .cat-change__text {
+  margin-bottom: 44px;
+
   @include font(14px, 20px, $font-regular, $black-two);
   text-transform: uppercase;
+}
+
+.cat-cange__image {
+  margin-bottom: 35px;
 }
 
 .cat-change__button {
@@ -22,3 +38,4 @@
   background: none;
   border: 0;
 }
+

@@ -1,6 +1,24 @@
+.features {
+  padding: 32px 0 42px;
+}
+
+.features__title {
+  margin-bottom: 35px;
+}
+
 .features__list {
   margin: 0;
   padding: 0;
 
   list-style: none;
 }
+
+.features__item {
+  margin-bottom: 20px;
+}
+
+.features__item:last-child {
+  margin-bottom: 0;
+}
+
+

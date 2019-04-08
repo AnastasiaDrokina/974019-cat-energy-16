@@ -1,9 +1,24 @@
+.form__fieldset {
+  padding-bottom: 30px;
+
+  border: 0;
+}
+
+.form__field {
+  margin-bottom: 14px;
+}
+
+.form__legend {
+  margin-bottom: 31px;
+}
+
 .form__label {
   @include font(16px, 18px, $font-regular, $black);
   text-transform: uppercase;
 
   color: $black;
 }
+
 ::placeholder {
   @include font(16px, 18px, $font-regular, $brown);
   text-transform: uppercase;
@@ -14,3 +29,6 @@
 .form__text {
   @include font(14px, 16px);
 }
+
+
+

@@ -1,8 +1,11 @@
 .title {
+  margin-top: 0;
   @include font(36px, 60px, $font-regular, $black-two);
 }
 
 .title--smaller {
+  margin-top: 0;
+
   font-size: 24px;
   line-height: 24px;
 }

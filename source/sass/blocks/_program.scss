@@ -1,18 +1,28 @@
 .program {
+  padding-top: 29px;
   background: url(../img/index-background-mobile@1x.jpg) left top no-repeat transparent;
 }
 
 .program__title {
+  margin-bottom: 19px;
+
   color: $white;
   line-height: 36px;
 }
 
 .program__slogan {
+  margin-bottom: 29px;
+
   @include font(14px, 14px, $font-regular, $white);
   text-transform: uppercase;
 }
 
+.program__image {
+  margin-bottom: 3px;
+}
+
 .program__link {
   @include font(14px, 18px, $font-regular, $white);
+  background: $green;
   text-transform: uppercase;
 }
