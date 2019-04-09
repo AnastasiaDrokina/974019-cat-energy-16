@@ -20,3 +20,20 @@
 .features__item:last-child {
   margin-bottom: 0;
 }
+
+@media (min-width: $tablet) {
+  .features__list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .features__item {
+    width: 50%;
+  }
+}
+
+@media (min-width: $desktop) {
+  .features__list {
+    justify-content: space-between;
+    flex-wrap: nowrap;
+  }
+}

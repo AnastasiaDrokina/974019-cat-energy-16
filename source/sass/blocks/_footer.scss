@@ -6,6 +6,11 @@
   background: $white;
 }
 
+.footer__box {
+  display: flex;
+  justify-content: space-between;
+}
+
 .footer__container {
   background: $grey;
 }

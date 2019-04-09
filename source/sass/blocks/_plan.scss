@@ -24,6 +24,8 @@
   text-transform: uppercase;
 }
 
-.plan:last-child {
-  margin-bottom: 0;
+@media (min-width: $desktop) {
+  .plan {
+    width: 570px;
+  }
 }

@@ -1,5 +1,7 @@
-a {
-  text-decoration: none;
+body {
+  margin: 0;
+
+  @include font(14px, 18px, $font-sans-serif, $brown);
 }
 
 .visually-hidden:not(:focus):not(:active),
@@ -18,12 +20,23 @@ input[type="radio"].visually-hidden {
   overflow: hidden;
 }
 
+a {
+  text-decoration: none;
+}
+
 .container {
   padding: 0 20px;
 }
 
-body {
-  margin: 0;
+@media (min-width: $tablet) {
+  .container {
+    width: 768px;
+    margin: auto;
+  }
+}
 
-  @include font(14px, 18px, $font-sans-serif, $brown);
+@media (min-width: $desktop) {
+  .container {
+    width: 1220px;
+  }
 }

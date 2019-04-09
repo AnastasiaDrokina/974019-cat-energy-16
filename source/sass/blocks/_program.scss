@@ -1,6 +1,10 @@
 .program {
   padding-top: 29px;
-  background: url("../img/index-background-mobile@1x.jpg") left top no-repeat transparent;
+  background: url("../img/index-background-mobile@1x.jpg") center top no-repeat transparent;
+
+  .plan:last-child {
+    margin-bottom: 0;
+  }
 }
 
 .program__title {
@@ -25,4 +29,18 @@
   @include font(14px, 18px, $font-regular, $white);
   background: $green;
   text-transform: uppercase;
+}
+
+@media (min-width: $desktop) {
+  .program {
+    .plan:last-child {
+      margin-bottom: 20px;
+    }
+  }
+
+  .program__plan {
+    display: flex;
+    justify-content: space-between;
+  }
+
 }
