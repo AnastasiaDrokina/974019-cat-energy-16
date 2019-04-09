@@ -1,0 +1,29 @@
+.plan {
+  margin: 22px 0 20px;
+  background: $grey;
+}
+
+.plan__title {
+  padding-top: 22px;
+  margin-bottom: 29px;
+
+  @include font(24px, 37px, $font-regular, $black-two);
+  text-transform: uppercase;
+}
+
+.plan__description {
+  margin-bottom: 23px;
+}
+
+.plan__link {
+  display: inline-block;
+  margin: 0;
+  padding: 20px 0 22px;
+
+  @include font(16px, 16px, $font-regular, $black-two);
+  text-transform: uppercase;
+}
+
+.plan:last-child {
+  margin-bottom: 0;
+}

@@ -1,0 +1,16 @@
+.section-form {
+  padding-top: 30px;
+}
+
+.section-form__title {
+  margin-bottom: 35px;
+}
+
+.section-form__text {
+  margin-top: 0;
+  margin-bottom: 39px;
+
+  @include font(14px, 18px, $font-regular, $black-two);
+
+  text-transform: uppercase;
+}

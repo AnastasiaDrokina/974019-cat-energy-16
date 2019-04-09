@@ -3,10 +3,11 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Кэт энерджи</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <header class="header">
-        <div class="container">
+        <div class="header__container  container">
           <a class="header__logo logo" href="index.html" aria-label="Логотип Cat Energy">
             <img class="logo__image" src="http://placehold.it/128x24" width="128" height="24" alt="Логотип Cat Energy">
           </a>
@@ -29,13 +30,13 @@
         </div>
       </header>
     <main>
-      <section class="section">
-        <div class="container">
-          <h1 class="section__title  section__title--big">Подбор программы</h1>
-          <p class="section__text">Заполните анкету и мы подберем программу питания для вашего кота</p>
+      <section class="section-form">
+        <div class="section-form__container  container">
+          <h1 class="section-form__title  title">Подбор программы</h1>
+          <p class="section-form__text">Заполните анкету и мы подберем программу питания для вашего кота</p>
           <form class="form" action="https://echo.htmlacademy.ru" method="post">
             <fieldset class="form__fieldset">
-              <legend class="form__legend  visually-hidden">Анкета вашего кота</legend>
+              <legend class="visually-hidden">Анкета вашего кота</legend>
               <div class="form__field">
                 <label class="form__label" for="name">Имя:*</label>
                 <input class="form__input" type="text" name="name-field" id="name" placeholder="Барсик">
@@ -62,7 +63,7 @@
               </div>
             </fieldset>
             <fieldset class="form__fieldset">
-              <legend class="form__legend">Контактные данные (владельца кота)</legend>
+              <legend class="form__legend title title--smaller">Контактные данные (владельца кота)</legend>
               <div class="form__field">
                 <label class="form__label" for="email">E-mail:*</label>
                 <input class="form__input" type="email" name="email-field" id="email" placeholder="kuklachev@gmail.com">
@@ -73,14 +74,14 @@
               </div>
             </fieldset>
             <fieldset class="form__fieldset">
-              <legend class="form__legend">Комментарий</legend>
+              <legend class="form__legend title title--smaller">Комментарий</legend>
               <div class="form__field">
                 <label class="form__label" for="comment"></label>
                 <textarea class="form__textarea" name="comment-field" id="comment" placeholder="Расскажите обо всех повадках кота"></textarea>
               </div>
             </fieldset>
             <fieldset class="form__fieldset">
-              <legend class="form__legend">Дополнительно</legend>
+              <legend class="form__legend title title--smaller">Дополнительно</legend>
               <div class="form__field">
                 <input class="form__input" type="checkbox" name="sweetener-field" id="sweetener" checked>
                 <label class="form__label" for="sweetener">Сахарозаменитель</label>
@@ -99,34 +100,36 @@
               </div>
             </fieldset>
             <button class="button" type="submit">Отправить заявку</button>
-            <p>*— Обязательные поля</p>
+            <p class="form__text">*— Обязательные поля</p>
           </form>
         </div>
       </section>
     </main>
     <footer class="footer">
-      <div class="container">
         <div class="footer__map  map">
-          <p class="map__title">Приглашаем к сотрудничеству дилеров!</p>
-          <p class="map__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
-          <div>
-            <img class="map__image" src="http://placehold.it/320x400"  width="320" height="400" alt=" Мы находимся по адресу: ул. Большая Конюшенная, д. 19/8 Санкт-Петербург">
-            <button class="map__button" type="button">Закрыть</button>
+          <div class="container">
+            <p class="map__title">Приглашаем к сотрудничеству дилеров!</p>
+            <p class="map__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+            <div>
+              <img class="map__image" src="http://placehold.it/320x400"  width="320" height="400" alt=" Мы находимся по адресу: ул. Большая Конюшенная, д. 19/8 Санкт-Петербург">
+              <button class="map__button visually-hidden" type="button">Закрыть</button>
+            </div>
           </div>
         </div>
-        <a class="footer__logo  logo" aria-label="Логотип Cat Energy">
-          <img class="logo__image" src="http://placehold.it/128x24" width="128" height="24" alt="Логотип Cat Energy">
-        </a>
-        <ul class="footer__socials  socials">
-          <li class="socials__item"><a class="socials__link  socials__link--vkontakte" href="#" aria-label="Мы в Вконтакте"></a></li>
-          <li class="socials__item"><a class="socials__link  socials__link--instagram" href="#" aria-label="Мы в Инстаграме"></a></li>
-          <li class="socials__item"><a class="socials__link  socials__link--facebook" href="#" aria-label="Мы на Фейсбуке"></a></li>
-        </ul>
-        <div class="footer__creator  creator">
-          <a class="creator__name" href="https://htmlacademy.ru/intensive/adaptive">Html Academy</a>
-          <a class="creator__logo" href="https://htmlacademy.ru/intensive/adaptive" aria-label="Переход на страницу Html Academy"></a>
+        <div class="footer__container  container">
+          <a class="footer__logo  logo" aria-label="Логотип Cat Energy">
+            <img class="logo__image" src="http://placehold.it/128x24" width="128" height="24" alt="Логотип Cat Energy">
+          </a>
+          <ul class="footer__socials  socials">
+            <li class="socials__item"><a class="socials__link  socials__link--vkontakte" href="#" aria-label="Мы в Вконтакте"></a></li>
+            <li class="socials__item"><a class="socials__link  socials__link--instagram" href="#" aria-label="Мы в Инстаграме"></a></li>
+            <li class="socials__item"><a class="socials__link  socials__link--facebook" href="#" aria-label="Мы на Фейсбуке"></a></li>
+          </ul>
+          <div class="footer__creator  creator">
+            <a class="creator__name" href="https://htmlacademy.ru/intensive/adaptive">Html Academy</a>
+            <a class="creator__logo" href="https://htmlacademy.ru/intensive/adaptive" aria-label="Переход на страницу Html Academy"></a>
+          </div>
         </div>
-      </div>
-    </footer>
+      </footer>
   </body>
 </html>

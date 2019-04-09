@@ -3,10 +3,11 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Кэт энерджи</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <header class="header">
-      <div class="container">
+      <div class="header__container  container">
         <a class="header__logo  logo" href="index.html" aria-label="Логотип Cat Energy">
           <img class="logo__image" src="http://placehold.it/128x24" width="128" height="24" alt="Логотип Cat Energy">
         </a>
@@ -30,9 +31,9 @@
     </header>
     <main>
       <section class="products">
-        <div class="products__container">
-          <h1 class="products__title  title--big">Каталог продукции</h1>
-          <h2 class="products__title  visually-hidden">Основная продукция</h2>
+        <div class="products__container  container">
+          <h1 class="products__title title">Каталог продукции</h1>
+          <h2 class="visually-hidden">Основная продукция</h2>
           <article class="product">
             <h3 class="product__title">Cat Energy Pro 500 г</h3>
             <img class="product__image" src="http://placehold.it/140x144" width="140" height="144" alt="Cat Energy Pro 500г Курица">
@@ -166,85 +167,85 @@
             </ul>
             <button class="button">Заказать</button>
           </article>
-          <div class="product__item  product__item--more">
-            <h3>Показать ещё 100500 товаров</h3>
-            <p>На самом деле вкусов гораздо больше!</p>
+          <div class="product-plus">
+            <h3 class="product-plus__title  product-plus__title--more">Показать ещё 100500 товаров</h3>
+            <p class="product-plus__info--more">На самом деле вкусов гораздо больше!</p>
             <button class="button button--more" type="button">Показать всё</button>
           </div>
         </div>
       </section>
-      <section class="section">
-        <div class="container">
-          <h2 class="section__title">Дополнительные товары</h2>
-          <div class="products">
-            <article class="product">
-              <h3 class="product__title  product__title--simple">Сахарозаменитель</h3>
-              <ul class="product__list">
-                <li class="product__item  product__item--simple">
-                  <span class="product__info">1 упаковка (100 г)</span>
-                  <span class="product__info">100 Р.</span>
+      <section class="products-plus">
+        <div class="products-plus__container  container">
+          <h2 class="products__title title title--smaller">Дополнительные товары</h2>
+            <article class="product-plus">
+              <h3 class="product-plus__title  product-plus__title--simple">Сахарозаменитель</h3>
+              <ul class="product-plus__list">
+                <li class="product-plus__item  product-plus__item--simple">
+                  <span class="product-plus__info">1 упаковка (100 г)</span>
+                  <span class="product-plus__info">100 Р.</span>
                 </li>
               </ul>
               <button class="button">Заказать</button>
             </article>
-            <article class="product">
-              <h3 class="product__title  product__title--simple">Питьевая водаь</h3>
-              <ul class="product__list">
-                <li class="product__item  product__item--simple">
-                  <span class="product__info">5 литров</span>
-                  <span class="product__info">50 Р.</span>
+            <article class="product-plus">
+              <h3 class="product-plus__title  product-plus__title--simple">Питьевая вода</h3>
+              <ul class="product-plus__list">
+                <li class="product-plus__item  product-plus__item--simple">
+                  <span class="product-plus__info">5 литров</span>
+                  <span class="product-plus__info">50 Р.</span>
                 </li>
               </ul>
               <button class="button">Заказать</button>
             </article>
-            <article class="product">
-              <h3 class="product__title  product__title--simple">Молоко</h3>
-              <ul class="product__list">
-                <li class="product__item  product__item--simple">
-                  <span class="product__info">1 литр</span>
-                  <span class="product__info">100 Р.</span>
+            <article class="product-plus">
+              <h3 class="product-plus__title  product-plus__title--simple">Молоко</h3>
+              <ul class="product-plus__list">
+                <li class="product-plus__item  product-plus__item--simple">
+                  <span class="product-plus__info">1 литр</span>
+                  <span class="product-plus__info">100 Р.</span>
                 </li>
               </ul>
               <button class="button">Заказать</button>
             </article>
-            <article class="product">
-              <h3 class="product__title  product__title--simple">Витамины</h3>
-              <ul class="product__list">
-                <li class="product__item  product__item--simple">
-                  <span class="product__info">1 упаковка (30 г)</span>
-                  <span class="product__info">300 Р.</span>
+            <article class="product-plus">
+              <h3 class="product-plus__title  product-plus__title--simple">Витамины</h3>
+              <ul class="product-plus__list">
+                <li class="product-plus__item  product-plus__item--simple">
+                  <span class="product-plus__info">1 упаковка (30 г)</span>
+                  <span class="product-plus__info">300 Р.</span>
                 </li>
               </ul>
               <button class="button">Заказать</button>
             </article>
-          </div>
-          <p class="section__gift">Закажи всё и получите чехол для кота в подарок!</p>
+          <div class="gift">Закажи все и получите чехол для кота в подарок!</div>
         </div>
       </section>
     </main>
     <footer class="footer">
-      <div class="container">
         <div class="footer__map  map">
-          <p class="map__title">Приглашаем к сотрудничеству дилеров!</p>
-          <p class="map__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
-          <div>
-            <img class="map__image" src="http://placehold.it/320x400"  width="320" height="400" alt=" Мы находимся по адресу: ул. Большая Конюшенная, д. 19/8 Санкт-Петербург">
-            <button class="map__button" type="button">Закрыть</button>
+          <div class="container">
+            <p class="map__title">Приглашаем к сотрудничеству дилеров!</p>
+            <p class="map__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+            <div>
+              <img class="map__image" src="http://placehold.it/320x400"  width="320" height="400" alt=" Мы находимся по адресу: ул. Большая Конюшенная, д. 19/8 Санкт-Петербург">
+              <button class="map__button visually-hidden" type="button">Закрыть</button>
+            </div>
           </div>
         </div>
-        <a class="footer__logo  logo" aria-label="Логотип Cat Energy">
-          <img class="logo__image" src="http://placehold.it/128x24" width="128" height="24" alt="Логотип Cat Energy">
-        </a>
-        <ul class="footer__socials  socials">
-          <li class="socials__item"><a class="socials__link  socials__link--vkontakte" href="#" aria-label="Мы в Вконтакте"></a></li>
-          <li class="socials__item"><a class="socials__link  socials__link--instagram" href="#" aria-label="Мы в Инстаграме"></a></li>
-          <li class="socials__item"><a class="socials__link  socials__link--facebook" href="#" aria-label="Мы на Фейсбуке"></a></li>
-        </ul>
-        <div class="footer__creator  creator">
-          <a class="creator__name" href="https://htmlacademy.ru/intensive/adaptive">Html Academy</a>
-          <a class="creator__logo" href="https://htmlacademy.ru/intensive/adaptive" aria-label="Переход на страницу Html Academy"></a>
+        <div class="footer__container  container">
+          <a class="footer__logo  logo" aria-label="Логотип Cat Energy">
+            <img class="logo__image" src="http://placehold.it/128x24" width="128" height="24" alt="Логотип Cat Energy">
+          </a>
+          <ul class="footer__socials  socials">
+            <li class="socials__item"><a class="socials__link  socials__link--vkontakte" href="#" aria-label="Мы в Вконтакте"></a></li>
+            <li class="socials__item"><a class="socials__link  socials__link--instagram" href="#" aria-label="Мы в Инстаграме"></a></li>
+            <li class="socials__item"><a class="socials__link  socials__link--facebook" href="#" aria-label="Мы на Фейсбуке"></a></li>
+          </ul>
+          <div class="footer__creator  creator">
+            <a class="creator__name" href="https://htmlacademy.ru/intensive/adaptive">Html Academy</a>
+            <a class="creator__logo" href="https://htmlacademy.ru/intensive/adaptive" aria-label="Переход на страницу Html Academy"></a>
+          </div>
         </div>
-      </div>
-    </footer>
+      </footer>
   </body>
 </html>
