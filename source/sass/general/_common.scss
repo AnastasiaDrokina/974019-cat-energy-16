@@ -1,3 +1,9 @@
+html {
+  box-sizing: border-box;
+}
+*, *::before, *::after {
+  box-sizing: inherit;
+}
 body {
   margin: 0;
 
@@ -30,13 +36,13 @@ a {
 
 @media (min-width: $tablet) {
   .container {
-    width: 768px;
+    max-width: 768px;
     margin: auto;
   }
 }
 
 @media (min-width: $desktop) {
   .container {
-    width: 1220px;
+    max-width: 1220px;
   }
 }

@@ -29,3 +29,13 @@
   margin-top: 31px;
   padding-bottom: 31px;
 }
+
+@media (min-width: $tablet) {
+  .footer__container {
+    display: flex;
+    justify-content: space-between;
+  }
+  .footer__box {
+    background: $grey;
+  }
+}
