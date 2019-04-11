@@ -49,9 +49,16 @@
 @media(min-width: $desktop) {
   .product-plus {
     display: flex;
-    justify-content: space-between;
 
     border: none;
+  }
+
+  .product-plus__wrapper {
+    width: 100%;
+  }
+
+  .product-plus__button {
+    width: 245px;
   }
 
   .product-plus__box {
