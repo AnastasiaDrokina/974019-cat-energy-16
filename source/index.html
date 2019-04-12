@@ -8,11 +8,13 @@
   <body>
     <header class="header">
       <div class="header__container  container">
-        <a class="header__logo  logo" aria-label="Логотип Cat Energy">
-          <img class="logo__image" src="http://placehold.it/128x24" width="128" height="24" alt="Логотип Cat Energy">
-        </a>
-        <nav class="nav  header__nav">
+        <div class="header__wrapper">
+          <a class="header__logo  logo" aria-label="Логотип Cat Energy">
+            <img class="logo__image" src="http://placehold.it/128x24" width="128" height="24" alt="Логотип Cat Energy">
+          </a>
           <button class="nav__toggle" type="button">Открыть меню</button>
+        </div>
+        <nav class="nav  header__nav">
           <div class="nav__wrapper">
             <ul class="nav__list">
               <li class="nav__item">
@@ -32,10 +34,12 @@
     <main class="main">
       <section class="program">
         <div class="program__container  container">
-          <h1 class="program__title title">Функциональное питание для котов</h1>
-          <p class="program__slogan">Занялся собой? Займись котом!</p>
-          <img class="program__image" src="http://placehold.it/280x270" width="280" height="270" alt="Cat Energy Pro 500г Курица">
-          <a class="program__link button" href="form.html">Подобрать программу</a>
+          <div class="program__wrapper">
+            <h1 class="program__title title">Функциональное <br> питание для котов</h1>
+            <p class="program__slogan">Занялся собой? Займись котом!</p>
+            <img class="program__image" src="http://placehold.it/280x270" width="280" height="270" alt="Cat Energy Pro 500г Курица">
+            <a class="program__link button" href="form.html">Подобрать программу</a>
+          </div>
           <div class="program__plan">
             <article class="plan  plan--smaller">
               <h2 class="plan__title">Похудение</h2>
@@ -47,7 +51,7 @@
               <p class="plan__description">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
               <a class="plan__link" href="#">Каталог Pro</a>
             </article>
-         </div>
+          </div>
         </div>
       </section>
       <section class="features">

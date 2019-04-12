@@ -15,12 +15,12 @@
   text-transform: uppercase;
 }
 
-@media(min-width:$tablet) {
+@media (min-width: $tablet) {
   .section-form__title {
     margin-bottom: 53px;
   }
 
-.section-form__text {
-  margin-bottom: 69px;
+  .section-form__text {
+    margin-bottom: 69px;
   }
 }

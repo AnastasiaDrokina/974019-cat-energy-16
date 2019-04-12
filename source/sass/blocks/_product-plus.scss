@@ -10,6 +10,7 @@
   @include font(16px, 16px, $font-regular, $black);
   text-transform: uppercase;
 }
+
 .product-plus__list {
   @include list-reset;
 }
@@ -34,19 +35,20 @@
   @include font(12px, 16px);
 }
 
-@media(min-width: $tablet) {
+@media (min-width: $tablet) {
   .product-plus {
     padding: 28px 38px;
 
     border: 1px solid $grey-border;
   }
+
   .product-plus__wrapper {
     display: flex;
     justify-content: space-between;
   }
 }
 
-@media(min-width: $desktop) {
+@media (min-width: $desktop) {
   .product-plus {
     display: flex;
 

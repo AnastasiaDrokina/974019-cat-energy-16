@@ -1,7 +1,8 @@
 .products-plus {
   padding-top: 31px;
 }
-@media(min-width: $desktop) {
+
+@media (min-width: $desktop) {
   .products-plus__wrapper {
     display: flex;
     flex-direction: row;

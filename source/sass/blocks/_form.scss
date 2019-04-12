@@ -12,15 +12,12 @@
   margin-bottom: 31px;
 }
 
-.form__wrapper {}
-
 .form__radios {
   padding: 20px;
+
   border-top: 1px solid $grey-border;
   border-bottom: 1px solid $grey-border;
 }
-
-// .form__wrapper--checkbox {}
 
 .form__field {
   display: flex;
@@ -29,22 +26,22 @@
 .form__label {
   margin-right: 16px;
 
-  white-space: nowrap;
-
   @include font(16px, 18px, $font-regular, $black);
+  color: $black;
   text-transform: uppercase;
 
-  color: $black;
+  white-space: nowrap;
 }
 
 .form__input {
   width: 100%;
   margin-bottom: 14px;
   padding: 15px;
-  border: 1px solid $grey-border;
 
   @include font(16px, 18px, $font-regular, $black);
   text-transform: uppercase;
+
+  border: 1px solid $grey-border;
 }
 
 .form__textarea {
@@ -60,7 +57,7 @@
   @include font(14px, 16px);
 }
 
-@media(min-width:$tablet) {
+@media (min-width: $tablet) {
   .form {
     padding-left: 40px;
   }
@@ -97,6 +94,7 @@
 
   .form__radios {
     padding: 25px;
+
     border: 1px solid $grey-border;
   }
 
@@ -115,10 +113,11 @@
   }
 }
 
-@media(min-width:$desktop) {
+@media (min-width: $desktop) {
   .form {
     padding-left: 0;
   }
+
   .form__wrapper {
     display: flex;
   }
@@ -130,7 +129,6 @@
       width: 100%;
     }
   }
-
 
   .form__wrapper--submit {
     .form__column {

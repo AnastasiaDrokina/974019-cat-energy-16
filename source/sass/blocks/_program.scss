@@ -1,10 +1,7 @@
 .program {
   padding-top: 29px;
-  background: url("../img/index-background-mobile@1x.jpg") center top no-repeat transparent;
 
-  .plan:last-child {
-    margin-bottom: 0;
-  }
+  background: url("../img/index-background-mobile@1x.jpg") center top no-repeat transparent;
 }
 
 .program__title {
@@ -31,11 +28,44 @@
   text-transform: uppercase;
 }
 
+@media (min-width: $tablet) {
+  .program {
+    background: none;
+  }
+
+  .program__wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .program__title {
+    margin-bottom: 33px;
+
+    color: $black-two;
+    font-size: 60px;
+    line-height: 60px;
+  }
+
+  .program__slogan {
+    margin-bottom: 29px;
+
+    @include font(20px, 20px, $font-regular, $black-two);
+  }
+
+  .program__image {
+    order: 1;
+  }
+
+  .program__link {
+    width: 245px;
+  }
+}
+
 @media (min-width: $desktop) {
   .program {
-    .plan:last-child {
-      margin-bottom: 20px;
-    }
+    position: relative;
+
+    background: url("../img/index-background-mobile@1x.jpg") right top no-repeat transparent;
   }
 
   .program__plan {
@@ -43,4 +73,8 @@
     justify-content: space-between;
   }
 
+  .program__image {
+    position: absolute;
+    right: 502px;
+  }
 }
