@@ -1,6 +1,11 @@
 .plan {
   margin: 22px 0 20px;
+
   background: $grey;
+}
+
+.plan:last-child {
+  margin-bottom: 0;
 }
 
 .plan__title {
@@ -24,6 +29,12 @@
   text-transform: uppercase;
 }
 
-.plan:last-child {
-  margin-bottom: 0;
+@media (min-width: $desktop) {
+  .plan {
+    width: 570px;
+  }
+
+  .plan:last-child {
+    margin-bottom: 20px;
+  }
 }
