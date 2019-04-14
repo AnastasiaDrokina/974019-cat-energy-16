@@ -3,11 +3,7 @@
 }
 
 .nav__item {
-  border-bottom: 1px solid $grey-border;
-
-  &:last-child {
-    border-bottom: none;
-  }
+  border-top: 1px solid $grey-border;
 }
 
 .nav__link {
