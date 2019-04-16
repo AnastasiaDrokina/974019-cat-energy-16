@@ -23,29 +23,35 @@
 
   &::before {
     content: " ";
-    position: absolute;
+    display: block;
     z-index: -1;
     width: 50px;
     height: 50px;
+    margin-right: 20px;
 
     background: $green;
     border-radius: 50%;
   }
 }
 
+.plan__icon {
+  position: absolute;
+}
+
 .plan__icon--slim {
+  left: 8px;
+  top: 0;
+
   width: 35px;
   height: 49px;
-  margin-right: 27px;
-  margin-left: 9px;
-  margin-top: -3px;
 }
 
 .plan__icon--pro {
+  left: -12px;
+  top: 13px;
+
   width: 67px;
   height: 25px;
-  margin-right: 12px;
-  margin-left: -10px;
 }
 
 .plan__description {
@@ -97,6 +103,7 @@
       margin-top: -100px;
       width: 200px;
       height: 200px;
+      margin-right: 0;
 
       background: $green;
       border-radius: 50%;
@@ -117,13 +124,13 @@
   .plan__icon {
     position: absolute;
     top: 50%;
+    left: auto;
   }
 
   .plan__icon--slim {
-    right: 92px;
+    right: 91px;
     width: 141px;
     height: 194px;
-    margin-right: 0;
     margin-top: -97px;
   }
 
@@ -139,7 +146,9 @@
 @media (min-width: $desktop) {
   .plan {
     position: static;
+
     width: 570px;
+    padding: 47px 56px 62px 52px;
   }
 
   .plan:last-child {
@@ -149,24 +158,36 @@
   .plan__title {
     position: relative;
 
+
     &::before {
       content: " ";
+      position: static;
       left: 0;
       right: auto;
-
-      margin-top: -50px;
+      margin-top: 0;
+      margin-right: 64px;
 
       width: 100px;
       height: 100px;
     }
   }
 
+  .plan__icon {
+    margin: 0;
+  }
+
   .plan__icon--slim {
+    top: 0;
+    left: 16px;
+
     width: 71px;
     height: 97px;
   }
 
   .plan__icon--pro {
+    top: 18px;
+    left: -21px;
+
     width: 134px;
     height: 57px;
   }
