@@ -1,9 +1,17 @@
+.header {
+  border-bottom: 1px solid $grey-border;
+}
+
 .header__wrapper {
   display: flex;
   padding: 11px 0 15px;
 }
 
 @media (min-width: $tablet) {
+  .header {
+    border: none;
+  }
+
   .header__container {
     display: flex;
     justify-content: space-between;

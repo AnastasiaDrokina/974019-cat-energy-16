@@ -12,17 +12,16 @@
   margin-bottom: 31px;
 }
 
-.form__radios {
-  padding: 20px;
-
-  border: 1px solid $grey-border;
-}
 
 .form__field {
   display: flex;
+  align-items: center;
+  margin-bottom: 14px;
 }
 
 .form__label {
+  position: relative;
+
   margin-right: 16px;
 
   @include font(16px, 18px, $font-regular, $black);
@@ -30,11 +29,11 @@
   text-transform: uppercase;
 
   white-space: nowrap;
+  cursor: pointer;
 }
 
 .form__input {
   width: 100%;
-  margin-bottom: 14px;
   padding: 15px;
 
   @include font(16px, 18px, $font-regular, $black);
@@ -57,6 +56,59 @@
   text-align: center;
 }
 
+.form__radios {
+  padding: 20px;
+
+  border-top: 1px solid $grey-border;
+  border-bottom: 1px solid $grey-border;
+}
+
+.form__field--radio {
+  margin-bottom: 15px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.form__radio + .form__label {
+  display: flex;
+  align-items: center;
+
+  &::before {
+    content: "";
+    display: block;
+    width: 30px;
+    height: 30px;
+    margin-right: 16px;
+    border-radius: 50%;
+
+    border: 1px solid $grey-border;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 9px;
+
+    display: none;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    margin-top: -6px;
+
+    background: $green;
+  }
+}
+
+.form__radio:checked + .form__label::after {
+  display: block;
+}
+
+/**
+ * Tablet
+ */
 @media (min-width: $tablet) {
   .form {
     padding-left: 40px;
@@ -64,6 +116,10 @@
 
   .form__legend {
     margin-bottom: 70px;
+  }
+
+  .form__field {
+    margin-bottom: 20px;
   }
 
   .form__wrapper--checkbox {
@@ -92,14 +148,7 @@
     }
   }
 
-  .form__radios {
-    padding: 25px;
-
-    border: 1px solid $grey-border;
-  }
-
   .form__input {
-    margin-bottom: 20px;
     padding: 17px 20px;
   }
 
@@ -108,11 +157,39 @@
     padding: 17px 20px;
   }
 
+  .form__radios {
+    padding: 25px;
+
+    border: 1px solid $grey-border;
+  }
+
+  .form__field--radio {
+    margin-bottom: 15px;
+  }
+
+  .form__radio + .form__label {
+    &::before {
+      width: 40px;
+      height: 40px;
+    }
+
+    &::after {
+      width: 18px;
+      height: 18px;
+      margin-top: -9px;
+      left: 11px;
+    }
+  }
+
+
   .form__box {
     display: flex;
   }
 }
 
+/**
+ * Desktop
+ */
 @media (min-width: $desktop) {
   .form {
     padding-left: 0;
