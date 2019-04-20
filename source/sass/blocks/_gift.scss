@@ -1,16 +1,52 @@
 .gift {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
   min-height: 289px;
   width: 280px;
-  margin: auto;
+  margin: 39px auto 0;
+  padding-top: 65px;
+  padding-bottom: 43px;
 
   @include font(16px, 20px, $font-sans-serif, $white);
 
   background: url("../img/gift-photo-mobile@1x.jpg") center top no-repeat transparent;
+
+  &::before {
+    content: "";
+    display: block;
+    width: 56px;
+    height: 61px;
+
+    background: url("../../img/icon-gift.svg") center top no-repeat transparent;
+  }
 }
 
 @media (min-width: $tablet) {
   .gift {
+    flex-direction: row;
+    justify-content: space-around;
+    text-align: left;
+    width: 708px;
+    min-height: 200px;
     margin-top: 39px;
     margin-bottom: 76px;
+
+    background: url("../../img/gift-photo-tablet@1x.jpg") center top no-repeat transparent;
+  }
+}
+
+@media (min-width: $desktop) {
+  .gift {
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    min-height: 289px;
+    width: 245px;
+
+    background: url("../../img/gift-photo-desktop@1x.jpg") center top no-repeat transparent;
   }
 }
