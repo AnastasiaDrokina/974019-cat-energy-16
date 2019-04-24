@@ -40,13 +40,14 @@ a {
 
 @media (min-width: $tablet) {
   .container {
-    max-width: 768px;
+    padding: 0 30px;
+    width: 768px;
     margin: auto;
   }
 }
 
 @media (min-width: $desktop) {
   .container {
-    max-width: 1260px;
+    width: 1260px;
   }
 }

@@ -4,6 +4,10 @@
   background: url("../img/index-background-mobile@1x.jpg") center top no-repeat transparent;
 }
 
+.program__wrapper {
+  text-align: center;
+}
+
 .program__title {
   margin-bottom: 19px;
 
@@ -39,8 +43,11 @@
   }
 
   .program__title {
+    width: 420px;
     margin-bottom: 33px;
+    margin-left: 90px;
 
+    text-align: left;
     color: $black-two;
     font-size: 60px;
     line-height: 60px;
@@ -48,16 +55,22 @@
 
   .program__slogan {
     margin-bottom: 29px;
+    width: 420px;
+    margin-left: 90px;
+
+    text-align: left;
 
     @include font(20px, 20px, $font-regular, $black-two);
   }
 
   .program__image {
+    margin: auto;
     order: 1;
   }
 
   .program__link {
     width: 245px;
+    margin-left: 90px;
   }
 }
 
@@ -66,6 +79,10 @@
     position: relative;
 
     background: url("../img/index-background-mobile@1x.jpg") right top no-repeat transparent;
+  }
+
+  .program__wrapper {
+    margin-bottom: 80px;
   }
 
   .program__plan {
