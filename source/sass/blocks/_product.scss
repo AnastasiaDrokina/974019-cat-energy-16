@@ -89,6 +89,11 @@
     border-bottom: $border;
   }
 
+  .product__image {
+    width: auto;
+    height: auto;
+  }
+
   .product__category {
     display: inline;
   }

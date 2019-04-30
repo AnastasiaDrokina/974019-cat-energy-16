@@ -1,0 +1,15 @@
+.socials {
+  @include list-reset;
+}
+
+.socials__link {
+  width: 22px;
+  height: 12px;
+  display: flex;
+  justify-content: center;
+  vertical-align: middle;
+}
+
+.socials__link--vkontakte {
+  background: url("../img/icone-vk.svg") left top no-repeat transparent;
+}

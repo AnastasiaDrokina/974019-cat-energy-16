@@ -268,10 +268,8 @@
   }
 
   .form__wrapper--checkbox {
-    flex-wrap: nowrap;
-
     .form__column {
-      width: 100%;
+      width: 25%;
     }
   }
 
@@ -283,7 +281,7 @@
 
   .form__column {
     width: 100%;
-    padding: 0 40px;
+    // padding: 0 40px;
 
     &:first-child {
       padding-left: 0;
