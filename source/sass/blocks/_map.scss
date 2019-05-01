@@ -6,8 +6,6 @@
 .map__title,
 .map__address {
   margin: 0;
-  padding-bottom: 26px;
-  padding-top: 31px;
 }
 
 .map__address {
@@ -27,5 +25,9 @@
     text-align: right;
 
     @include font(16px, 20px);
+  }
+
+  .map__image {
+    width: auto;
   }
 }

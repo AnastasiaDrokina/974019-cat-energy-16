@@ -1,3 +1,11 @@
 .creator__name {
+  margin-right: 141px;
+
   @include font(16px, 16px, $font-sans-serif, $brown);
+}
+
+@media (min-width: $tablet) {
+  .creator__name {
+    margin-right: 23px;
+  }
 }

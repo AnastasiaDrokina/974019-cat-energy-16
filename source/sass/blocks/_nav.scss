@@ -94,6 +94,10 @@
     @include font(20px, 25px, $font-regular, $black-two);
   }
 
+  .nav__link--home {
+    @include font(20px, 25px, $font-regular, $white);
+  }
+
   .nav__link--active {
     border-bottom-color: $green;
   }

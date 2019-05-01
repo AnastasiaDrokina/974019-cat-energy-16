@@ -15,7 +15,7 @@
   .header__container {
     display: flex;
     justify-content: space-between;
-    align-items: baseline;
+    align-items: center;
   }
 
   .header__nav {
@@ -26,5 +26,13 @@
 @media (min-width: $tablet) {
   .header__wrapper {
     border-bottom: none;
+  }
+}
+
+@media (min-width: $desktop) {
+  .header--home {
+    position: absolute;
+    z-index: 1;
+    top: 53px;
   }
 }
