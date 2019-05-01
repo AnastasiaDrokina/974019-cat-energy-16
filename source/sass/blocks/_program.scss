@@ -1,5 +1,6 @@
 .program {
   padding-top: 29px;
+  // padding-top: 140px;
 
   background: url("../img/index-background-mobile@1x.jpg") center top no-repeat transparent;
 
@@ -84,6 +85,8 @@
   .program {
     position: relative;
 
+    padding-top: 237px;
+
     background: url("../img/index-background-desktop@1x.jpg") right top no-repeat transparent;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
@@ -93,7 +96,7 @@
   }
 
   .program__wrapper {
-    padding-bottom: 80px;
+    margin-bottom: 253px;
   }
 
   .program__plan {
@@ -104,6 +107,7 @@
 
   .program__image {
     position: absolute;
-    right: 502px;
+    right: 324px;
+    top: 159px;
   }
 }

@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
-    <header class="header">
+    <header class="header header--home">
       <div class="header__container  container">
         <div class="header__wrapper">
           <a class="header__logo  logo" aria-label="Логотип Cat Energy">
@@ -25,13 +25,13 @@
           <div class="nav__wrapper">
             <ul class="nav__list">
               <li class="nav__item">
-                <a class="nav__link nav__link--active" href="index.html">Главная</a>
+                <a class="nav__link nav__link--active nav__link--home" href="index.html">Главная</a>
               </li>
               <li class="nav__item">
-                <a class="nav__link" href="catalog.html">Каталог продукции</a>
+                <a class="nav__link nav__link--home" href="catalog.html">Каталог продукции</a>
               </li>
               <li class="nav__item">
-                <a class="nav__link" href="form.html">Подбор программы</a>
+                <a class="nav__link nav__link--home" href="form.html">Подбор программы</a>
               </li>
             </ul>
           </div>
@@ -75,10 +75,10 @@
         <div class="features__container  container">
           <h2 class="features__title  title">Как это работает</h2>
           <ul class="features__list">
-            <li class="features__item">Функциональное питание содержит только полезные <br> питательные вещества.</li>
-            <li class="features__item">Выпускается в виде порошка, <br> который нужно лишь залить <br> кипятком и готово.</li>
-            <li class="features__item">Замените один-два приема <br> обычной еды на наше <br> функциональное питание.</li>
-            <li class="features__item">Уже через месяц наслаждайтесь <br> изменениями к лучшему <br> вашего питомца!</li>
+            <li class="features__item">Функциональное питание содержит только полезные питательные вещества.</li>
+            <li class="features__item">Выпускается в виде порошка, который нужно лишь залить кипятком и готово.</li>
+            <li class="features__item">Замените один-два приема обычной еды на наше функциональное питание.</li>
+            <li class="features__item">Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!</li>
           </ul>
         </div>
       </section>
@@ -113,9 +113,11 @@
           </div>
         </div>
         <a class="map__link" aria-label="Карта офиса по адресу ул. Большая Конюшенная, д. 19/8 Санкт-Петербург"  href="#">
-          <source media="(min-width: 1300px)" srcset="img/bg-map-desktop@1x.png 1x, img/bg-map-desktop@2x.png 2x">
-          <source media="(min-width: 768px)" srcset="img/bg-map-tablet@1x.png 1x, img/bg-map-tablet@2x.png 2x">
-          <img class="map__image" src="img/bg-map-mobile@1x.png" srcset="img/bg-map-mobile@2x.png 2x" width="320" height="400" alt="Карта офиса по адресу ул. Большая Конюшенная, д. 19/8 Санкт-Петербург">
+          <picture class="map__picture">
+            <source media="(min-width: 1300px)" srcset="img/bg-map-desktop@1x.png 1x, img/bg-map-desktop@2x.png 2x">
+            <source media="(min-width: 768px)" srcset="img/bg-map-tablet@1x.png 1x, img/bg-map-tablet@2x.png 2x">
+            <img class="map__image" src="img/bg-map-mobile@1x.png" srcset="img/bg-map-mobile@2x.png 2x" width="320" height="400" alt="Карта офиса по адресу ул. Большая Конюшенная, д. 19/8 Санкт-Петербург">
+          </picture>
         </a>
       </div>
       <div class="footer__container">
