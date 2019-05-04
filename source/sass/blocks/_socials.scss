@@ -11,24 +11,29 @@
 
 .socials__link {
   display: block;
+
+  svg {
+    width: 100%;
+    height: 100%;
+  }
 }
 
 .socials__link--vkontakte {
   width: 22px;
   height: 12px;
-  background: url("../img/icon-vk-mobile.svg") left top no-repeat transparent;
+  // background: url("../img/icon-vk-mobile.svg") left top no-repeat transparent;
 }
 
 .socials__link--instagram {
   width: 17px;
   height: 17px;
-  background: url("../img/icon-insta-mobile.svg") left top no-repeat transparent;
+  // background: url("../img/icon-insta-mobile.svg") left top no-repeat transparent;
 }
 
 .socials__link--facebook {
   width: 10px;
   height: 19px;
-  background: url("../img/icon-fb-mobile.svg") left top no-repeat transparent;
+  // background: url("../img/icon-fb-mobile.svg") left top no-repeat transparent;
 }
 
 
@@ -41,20 +46,20 @@
     width: 30px;
     height: 16px;
 
-    background: url("../img/icon-vk.svg") left top no-repeat transparent;
+    // background: url("../img/icon-vk.svg") left top no-repeat transparent;
   }
 
   .socials__link--instagram {
     width: 23px;
     height: 23px;
 
-    background: url("../img/icon-insta.svg") left top no-repeat transparent;
+    // background: url("../img/icon-insta.svg") left top no-repeat transparent;
   }
 
   .socials__link--facebook {
     width: 14px;
     height: 28px;
 
-    background: url("../img/icon-fb.svg") left top no-repeat transparent;
+    // background: url("../img/icon-fb.svg") left top no-repeat transparent;
   }
 }
