@@ -18,26 +18,3 @@ navToggle.addEventListener('click', function() {
     navMain.classList.remove('nav--opened');
   }
 });
-
-var mapLink = document.querySelector(".contacts-button-map");
-var mapPopup = document.querySelector(".modal-map");
-var mapClose = mapPopup.querySelector(".map__close");
-
-mapLink.addEventListener("click", function (evt) {
-  evt.preventDefault();
-  mapPopup.classList.add("show");
-});
-
-mapClose.addEventListener("click", function (evt) {
-  evt.preventDefault();
-  mapPopup.classList.remove("show");
-});
-
-window.addEventListener("keydown", function (evt) {
-  if (evt.keyCode === 27) {
-    evt.preventDefault();
-    if (mapPopup.classList.contains("show")) {
-      mapPopup.classList.remove("show");
-    }
-  }
-});
