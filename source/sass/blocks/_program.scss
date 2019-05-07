@@ -1,6 +1,5 @@
 .program {
   padding-top: 29px;
-  // padding-top: 140px;
 
   background: url("../img/index-background-mobile@1x.jpg") center top no-repeat transparent;
 
@@ -33,7 +32,7 @@
 
 .program__link {
   @include font(14px, 18px, $font-regular, $white);
-  background: $green;
+  background: $green-leaf;
   text-transform: uppercase;
 }
 

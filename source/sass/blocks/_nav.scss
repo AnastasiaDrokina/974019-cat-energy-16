@@ -84,7 +84,7 @@
   }
 
   .nav__link--active {
-    border-bottom: 2px solid $green;
+    border-bottom: 2px solid $green-leaf;
     padding-bottom: 10px;
   }
 }
@@ -92,6 +92,14 @@
 @media (min-width: $desktop) {
   .nav__link {
     @include font(20px, 25px, $font-regular, $black-two);
+
+    &:hover {
+      opacity: 0.6;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
   }
 
   .nav__link--home {
@@ -99,6 +107,6 @@
   }
 
   .nav__link--active {
-    border-bottom-color: $green;
+    border-bottom-color: $white;
   }
 }
