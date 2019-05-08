@@ -86,12 +86,12 @@ gulp.task("server", function () {
     server: "build/"
 });
 
-gulp.watch("source/sass/**/*.{scss,sass}", gulp.series("css"));
+gulp.watch("source/sass/**/*.{scss,sass}", gulp.series("css", "refresh"));
 gulp.watch("source/img/icon-*.svg", gulp.series("sprite", "html", "refresh"));
 gulp.watch("source/*.html", gulp.series("html", "refresh"));
 });
 
-// gulp.task("images", gulp.series("image", "webp"));
+gulp.task("images", gulp.series("image", "webp"));
 gulp.task("build", gulp.series(
   "clean",
   "copy",
