@@ -97,17 +97,24 @@
         <div class="cat-change__container  container">
           <h2 class="cat-change__title title">Живой пример</h2>
           <p class="cat-change__decription">Борис сбросил 5 кг за месяц, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
-          <div class="cat-change__details">
-            <span class="cat-change__details-title">5 кг</span>
-            <span class="cat-change__details-text">Снижение веса</span>
+          <div class="cat-change__slider">
+            <div class="cat-change__details cat-change__details-first">
+              <span class="cat-change__details-title">5 кг</span>
+              <span class="cat-change__details-text">cнижение веса</span>
+            </div>
+            <div class="cat-change__details cat-change__details-second">
+              <span class="cat-change__details-title">60 дней</span>
+              <span class="cat-change__details-text">затрачено времени</span>
+            </div>
+            <div class="cat-change__text">
+              <p>Затраты на питание: 15 000 руб.</p>
+            </div>
           </div>
-          <div class="cat-change__details">
-            <span class="cat-change__details-title">60 дней</span>
-            <span class="cat-change__details-text">Затрачено времени</span>
-          </div>
-          <p class="cat-change__text">Затраты на питание: 15 000 руб.</p>
-          <img class="cat-cange__image" src="http://placehold.it/311x232" width="311" height="232" alt="Изображение кота">
-          <button class="cat-change__button" type="button">Было</button>
+          <picture class="cat-cange__picture">
+            <source media="(min-width: 1300px)" srcset="img/index-can-desktop@1x.png 1x, img/index-can-desktop@2x.png 2x">
+            <source media="(min-width: 768px)" srcset="img/index-can-tablet@1x.jpg 1x, img/index-can-tablet@2x.jpg 2x">
+            <img class="cat-cange__image" src="img/before-mobile@1x.png" srcset="imgbefore-mobile@2x.png 2x" width="311" height="232" alt="Изображение кота">
+          </picture>
           <div class="cat-change__progress"></div>
           <button class="cat-change__button" type="button">Стало</button>
         </div>
