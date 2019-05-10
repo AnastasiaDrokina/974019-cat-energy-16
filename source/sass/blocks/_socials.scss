@@ -1,8 +1,7 @@
 .socials {
   display: flex;
+  list-style: none;
   align-items: center;
-
-  @include list-reset;
 }
 
 .socials__item {

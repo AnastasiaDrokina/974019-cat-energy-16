@@ -1,12 +1,20 @@
 .program {
+  position: relative;
   padding-top: 29px;
 
-  background: url("../img/index-background-mobile@1x.jpg") center top no-repeat transparent;
-
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-    background-image: url("../img/index-background-mobile@2x.jpg");
+    background: url("../img/index-background-mobile@2x.jpg") center top no-repeat transparent;
     background-size: 320px auto;
   }
+}
+
+.program__background {
+  position: absolute;
+  z-index: -1;
+
+  width: 100%;
+  height: 306px;
+  background: url("../img/index-background-mobile@1x.jpg") center top no-repeat transparent $green-leaf;
 }
 
 .program__wrapper {
@@ -47,6 +55,10 @@
     flex-direction: column;
   }
 
+  .program__background {
+    background: none;
+  }
+
   .program__title {
     width: 420px;
     margin-bottom: 33px;
@@ -76,6 +88,9 @@
   }
 
   .program__link {
+    position: absolute;
+    top: 286px;
+
     width: 245px;
     margin-left: 90px;
   }
@@ -101,7 +116,7 @@
 
   .program__plan {
     display: flex;
-    padding: 22px 0 20px;
+    padding: 75px 0 20px;
     justify-content: space-between;
   }
 
@@ -109,5 +124,9 @@
     position: absolute;
     right: 324px;
     top: 159px;
+  }
+
+  .program__link {
+    top: 486px;
   }
 }

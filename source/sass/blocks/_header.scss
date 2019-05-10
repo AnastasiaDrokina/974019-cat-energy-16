@@ -2,6 +2,10 @@
   border-bottom: 1px solid $grey-border;
 }
 
+.header--home {
+  border-bottom: none;
+}
+
 .header__wrapper {
   display: flex;
   align-items: center;
@@ -28,6 +32,10 @@
     border: none;
   }
 
+  .header__wrapper {
+    border-bottom: none;
+  }
+
   .header__container {
     display: flex;
     justify-content: space-between;
@@ -37,12 +45,6 @@
   .header__nav {
     margin-left: auto;
     margin-right: 0;
-  }
-}
-
-@media (min-width: $tablet) {
-  .header__wrapper {
-    border-bottom: none;
   }
 }
 
