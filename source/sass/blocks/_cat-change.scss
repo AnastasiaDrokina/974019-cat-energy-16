@@ -65,8 +65,16 @@
   @include font(14px, 20px, $font-regular, $black-two);
 }
 
-.cat-cange__image {
+.cat-change__image {
+  display: block;
+  margin: auto;
   margin-bottom: 35px;
+}
+
+.cat-change__slider-toggle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .cat-change__button {
@@ -75,6 +83,45 @@
 
   background: none;
   border: 0;
+}
+
+
+.cat-change__progress {
+  margin: 0 10px;
+}
+
+.cat-change__label {
+  cursor: pointer;
+}
+
+.cat-change__toggle {
+  position: relative;
+
+  display: block;
+  width: 84px;
+  height: 14px;
+
+  border-radius: 6px;
+  border: solid 1px #cdcdcd;
+  background: white;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 3px;
+    left: 3px;
+
+    width: 35px;
+    height: 6px;
+
+    border-radius: 3px;
+    background: $green-leaf;
+  }
+}
+
+.cat-change__input:checked + .cat-change__toggle::before {
+  left: auto;
+  right: 3px;
 }
 
 @media (min-width: $tablet) {
