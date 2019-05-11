@@ -24,7 +24,12 @@
     position: absolute;
     z-index: -1;
     top: 17px;
+
     height: 3px;
+    width: 100%;
+    flex-grow: 1;
+    flex-shrink: 0;
+
     background: $green-leaf;
   }
 
