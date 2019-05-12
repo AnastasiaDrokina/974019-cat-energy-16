@@ -65,20 +65,20 @@
   .product-plus__info--price {
     margin-left: 52px;
   }
-
 }
 
 @media (min-width: $desktop) {
   .product-plus {
     display: flex;
-    padding: 28px 0;
+    padding: 15px 0;
 
     border: none;
     border-top: $border;
   }
 
   .product-plus__wrapper {
-    width: 100%;
+    flex: 1 1 auto;
+    align-items: center;
   }
 
   .product-plus__title {
@@ -91,6 +91,14 @@
 
   .product-plus__box {
     width: 895px;
+  }
+
+  .product-plus__list {
+    width: 344px;
+  }
+
+  .product-plus__item {
+    margin: 0;
   }
 
   .product-plus__info {

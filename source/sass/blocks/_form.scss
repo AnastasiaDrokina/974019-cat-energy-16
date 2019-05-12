@@ -15,32 +15,27 @@
 
 
 .form__subtitle {
-  position: relative;
-  padding-right: 22px;
+  display: flex;
+  align-items: center;
 
   &::before,
   &::after {
     content: "";
-    position: absolute;
-    z-index: -1;
-    top: 17px;
 
     height: 3px;
-    width: 100%;
-    flex-grow: 1;
-    flex-shrink: 0;
 
     background: $green-leaf;
   }
 
   &::before {
-    right: 100%;
-    left: -100%;
+    width: 80px;
+    margin-right: 20px;
   }
 
   &::after {
-    left: 100%;
-    right: -100%;
+    flex-grow: 1;
+    flex-shrink: 0;
+    margin-left: 20px;
   }
 }
 
@@ -103,6 +98,10 @@
   display: flex;
   align-items: center;
 
+  &:active {
+    opacity: 0.3;
+  }
+
   &::before {
     content: "";
     display: block;
@@ -111,6 +110,10 @@
     margin-right: 16px;
 
     border: $border;
+  }
+
+  &:hover::before {
+    border-color: $pinkish-grey;
   }
 
   &::after {
@@ -160,6 +163,10 @@
     border: $border;
   }
 
+  &:hover::before {
+    border-color: $pinkish-grey;
+  }
+
   &::after {
     content: "";
     position: absolute;
@@ -183,7 +190,7 @@
 /**
  * Tablet
  */
-@media (min-width: $tablet) {
+ @media (min-width: $tablet) {
   .form {
     padding-left: 40px;
   }
@@ -263,7 +270,7 @@
 /**
  * Desktop
  */
-@media (min-width: $desktop) {
+ @media (min-width: $desktop) {
   .form {
     padding-left: 0;
   }

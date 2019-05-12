@@ -32,9 +32,17 @@
   border-bottom: $border;
 }
 
-.footer__link  {
+.footer__link {
   display: inline-block;
-  padding-top: 39px;
+  margin-top: 39px;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
 }
 
 .footer__address {
@@ -57,7 +65,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 31px 0;
+  padding: 22px 0;
   width: 100%;
 }
 
@@ -86,7 +94,27 @@
 }
 
 @media (min-width: $desktop) {
+  .footer {
+    padding-top: 82px;
+  }
+
   .footer--color {
     background: $white;
+  }
+
+  .footer__map {
+    position: relative;
+  }
+
+  .footer__address {
+    position: absolute;
+    top: 110px;
+    left: 43px;
+
+    width: 570px;
+    height: 201px;
+    padding: 66px 90px 59px 76px;
+
+    background: white;
   }
 }
