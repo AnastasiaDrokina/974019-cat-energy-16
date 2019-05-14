@@ -71,6 +71,10 @@
   margin-bottom: 35px;
 }
 
+.cat-change__image--after {
+  display: none;
+}
+
 .cat-change__slider-toggle {
   display: flex;
   justify-content: center;
@@ -210,7 +214,9 @@
 
   .cat-change__pictures {
     display: flex;
-    justify-content: center
+    justify-content: center;
+    width: 676px;
+    margin: auto;
   }
 
   .cat-change__picture {
@@ -224,6 +230,7 @@
     margin: auto;
     margin-bottom: 35px;
     max-width: none;
+    width: 200%;
   }
 
   .cat-change__image--after {
@@ -236,4 +243,18 @@
     display: inline-block;
     vertical-align: baseline;
   }
+
+  .cat-change__pictures {
+    width: 730px;
+  }
+
+  .cat-change__decription {
+    max-width: 430px;
+  }
+
+  .cat-change__slider {
+    max-width: 430px;
+    flex-wrap: nowrap;
+  }
+
 }
