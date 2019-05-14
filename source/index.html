@@ -122,16 +122,18 @@
           </div>
         </div>
         <div class="cat-change__wrapper-slider">
-          <picture class="cat-change__picture">
-            <source media="(min-width: 1300px)" srcset="img/before-desktop@1x.png 1x, img/before-desktop@1x.png@2x.png 2x">
-            <source media="(min-width: 768px)" srcset="img/before-tablet@1x.png 1x, img/before-tablet@2x.png 2x">
-            <img class="cat-change__image" src="img/before-mobile@1x.png" srcset="img/before-mobile@2x.png 2x" width="311" height="232" alt="Изображение кота">
-          </picture>
-          <picture class="cat-change__picture">
-            <source media="(min-width: 1300px)" srcset="img/after-desktop@1x.png 1x, img/after-desktop@1x.png@2x.png 2x">
-            <source media="(min-width: 768px)" srcset="img/after-tablet@1x.png 1x, img/after-tablet@2x.png 2x">
-            <img class="cat-change__image" src="img/after-mobile@1x.png" srcset="img/after-mobile@2x.png 2x" width="311" height="232" alt="Изображение кота">
-          </picture>
+          <div class="cat-change__pictures">
+            <picture class="cat-change__picture">
+              <source media="(min-width: 1300px)" srcset="img/before-desktop@1x.png 1x, img/before-desktop@2x.png 2x">
+              <source media="(min-width: 768px)" srcset="img/before-tablet@1x.png 1x, img/before-tablet@2x.png 2x">
+              <img class="cat-change__image cat-change__image--before" src="img/before-mobile@1x.png" srcset="img/before-mobile@2x.png 2x" width="311" height="232" alt="Изображение кота">
+            </picture>
+            <picture class="cat-change__picture">
+              <source media="(min-width: 1300px)" srcset="img/after-desktop@1x.png 1x, img/after-desktop@2x.png 2x">
+              <source media="(min-width: 768px)" srcset="img/after-tablet@1x.png 1x, img/after-tablet@2x.png 2x">
+              <img class="cat-change__image cat-change__image--after" src="img/after-mobile@1x.png" srcset="img/after-mobile@2x.png 2x" width="311" height="232" alt="Изображение кота">
+            </picture>
+          </div>
           <div class="cat-change__slider-toggle">
             <button class="cat-change__button" type="button">Было</button>
             <div class="cat-change__progress">
@@ -159,6 +161,19 @@
             </div>
           </div>
         </div>
+        <noscript>
+          <div class="map__image">
+            <picture>
+              <source type="image/webp" media="(min-width: 1300px)" srcset="img/bg-map-desktop@1x.webp 1x, img/bg-map-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)" srcset="img/bg-map-tablet@1x.webp 1x, img/bg-map-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/bg-map-mobile@1x.webp 1x, img/bg-map-mobile@2x.webp 2x">
+
+              <source media="(min-width: 1300px)" srcset="img/bg-map-desktop@1x.png 1x, img/bg-map-desktop@2x.png 2x 2x">
+              <source media="(min-width: 768px)" srcset="img/bg-map-tablet@1x.png 1x, img/bg-map-tablet@2x.png 2x">
+              <img src="img/bg-map-mobile@1x.png" srcset="img/bg-map-mobile@2x.png 2x" width="100%" height="400" alt="Карта с магазином по адресу ул. Большая Конюшенная д. 29/8 ">
+            </picture>
+          </div>
+        </noscript>
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.7287533164465!2d30.31985701609695!3d59.9366429818755!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310f8f62bb3f%3A0xdbd8ceddae86ceba!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDI5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1557475025168!5m2!1sru!2sru" width="100%" height="400" frameborder="0" style="border:0; vertical-align: middle" allowfullscreen></iframe>
       </div>
       <div class="footer__container">
