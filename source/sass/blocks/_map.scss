@@ -16,6 +16,10 @@
   margin-bottom: 39px;
 }
 
+.map__city {
+  margin: 0;
+}
+
 @media (min-width: $tablet) {
   .map__title {
     @include font(20px, 25px, $font-regular, $black-two);

@@ -81,7 +81,7 @@
   }
 
   .footer__logo {
-    border-bottom: $border;
+    border-bottom: none;
   }
 
   .footer__socials {
@@ -95,7 +95,7 @@
 
 @media (min-width: $desktop) {
   .footer {
-    padding-top: 82px;
+    padding-top: 0;
   }
 
   .footer--color {
