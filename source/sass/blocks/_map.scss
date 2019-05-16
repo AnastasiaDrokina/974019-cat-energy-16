@@ -13,7 +13,24 @@
 }
 
 .map__image {
+  position: relative;
+
   margin-bottom: 39px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    display: block;
+    margin-left: -25px;
+    width: 55px;
+    height: 53px;
+
+    background: url("../../img/map-pin.png")  center top no-repeat;
+    z-index: 1;
+  }
 }
 
 .map__city {
@@ -34,8 +51,18 @@
     @include font(16px, 20px);
   }
 
+  .map__address {
+    margin-bottom: 11px;
+  }
+
   .map__image {
     width: auto;
+
+    &::before {
+      margin-left: -56px;
+      width: 113px;
+      height: 106px;
+    }
   }
 }
 
