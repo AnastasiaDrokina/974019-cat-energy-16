@@ -14,9 +14,10 @@
 
   background: url("../img/gift-photo-mobile@1x.jpg") center top no-repeat transparent;
 
-  // @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-  //   background-image: url("../../img/")
-  // }
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/gift-photo-mobile@2x.jpg");
+    background-size: 280px 289px;
+  }
 
   &::before {
     content: "";
@@ -39,6 +40,11 @@
     margin-bottom: 76px;
 
     background: url("../../img/gift-photo-tablet@1x.jpg") center top no-repeat transparent;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/gift-photo-tablet@2x.jpg");
+      background-size: 708px 200px;
+    }
   }
 }
 
@@ -53,5 +59,10 @@
     margin: 0;
 
     background: url("../../img/gift-photo-desktop@1x.jpg") center top no-repeat transparent;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/gift-photo-desktop@2x.jpg");
+      background-size: 245px 289px;
+    }
   }
 }

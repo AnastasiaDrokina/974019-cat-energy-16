@@ -17,7 +17,7 @@
 }
 
 .product__wrapper--description {
-  width: 100%;
+  flex-grow: 1;
   margin-bottom: 23px;
 
   order: 1;
@@ -27,6 +27,7 @@
   margin: 0 0 18px;
 
   @include font(16px, 20px, $font-regular, $black-two);
+  text-transform: uppercase;
 }
 
 .product__list {
@@ -148,8 +149,13 @@
   .product {
     width: 245px;
     margin-right: 40px;
+    margin-left: 0;
 
     background: $grey;
+
+    &:nth-child(4n) {
+      margin-right: 0;
+    }
   }
 
   .product__image {

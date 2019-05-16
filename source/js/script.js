@@ -1,5 +1,6 @@
 var navMain = document.querySelector('.nav');
 var navToggle = document.querySelector('.nav__toggle');
+var map = document.querySelector('.map__js');
 
 navMain.classList.remove('nav--nojs');
 
@@ -18,3 +19,5 @@ navToggle.addEventListener('click', function() {
     navMain.classList.remove('nav--opened');
   }
 });
+
+map.style.display = 'block';

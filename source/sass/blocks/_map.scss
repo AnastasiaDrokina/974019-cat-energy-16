@@ -12,10 +12,8 @@
   @include font(14px, 20px);
 }
 
-.map__image {
+.map__image-wrapper {
   position: relative;
-
-  margin-bottom: 39px;
 
   &::before {
     content: "";
@@ -31,6 +29,10 @@
     background: url("../../img/map-pin.png")  center top no-repeat;
     z-index: 1;
   }
+}
+
+.map__image {
+  vertical-align: middle;
 }
 
 .map__city {
@@ -55,7 +57,7 @@
     margin-bottom: 11px;
   }
 
-  .map__image {
+  .map__image-wrapper {
     width: auto;
 
     &::before {
