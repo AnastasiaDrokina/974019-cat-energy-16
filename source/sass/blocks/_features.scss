@@ -105,8 +105,23 @@
   }
 
   .features__item {
-    padding-right: 116px;
-    width: 25%;
+    width: 232px;
+
+    &:nth-child(1) .features__text {
+      width: 201px;
+    }
+
+    &:nth-child(2) .features__text {
+      width: 220px;
+    }
+
+    &:nth-child(3) .features__text {
+      width: 203px;
+    }
+
+    &:nth-child(4) .features__text {
+      width: 244px;
+    }
 
     &:nth-child(odd) {
       margin-right: 0;

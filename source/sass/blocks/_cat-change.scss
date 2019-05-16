@@ -262,22 +262,42 @@
 }
 
 @media (min-width: $desktop) {
+  .cat-change__container {
+    display: flex;
+    justify-content: space-between;
+  }
+
   .cat-change__price {
     display: inline-block;
     vertical-align: baseline;
+    margin-left: 98px;
   }
 
   .cat-change__pictures {
-    width: 730px;
+    width: 636px;
+    margin-right: -42px;
+
   }
 
   .cat-change__decription {
     max-width: 430px;
   }
 
-  .cat-change__slider {
-    max-width: 430px;
-    flex-wrap: nowrap;
+  .cat-change__text {
+    margin-left: 0;
   }
 
+  .cat-change__slider {
+    max-width: 366px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .cat-change__details-title {
+    width: 162px;
+  }
+
+  .cat-change__slider-toggle {
+    justify-content: flex-end;
+  }
 }

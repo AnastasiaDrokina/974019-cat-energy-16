@@ -102,6 +102,7 @@
   }
 
   .program__wrapper {
+    position: relative;
     margin-bottom: 253px;
   }
 
@@ -121,7 +122,6 @@
     }
   }
 
-
   .program__plan {
     display: flex;
     padding: 75px 0 20px;
@@ -130,11 +130,11 @@
 
   .program__image {
     position: absolute;
-    right: 324px;
-    top: 159px;
+    right: 224px;
+    bottom: -199px;
   }
 
   .program__link {
-    top: 486px;
+    top: 246px;
   }
 }
