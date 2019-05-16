@@ -69,20 +69,25 @@
   @include font(16px, 16px, $font-regular, $black-two);
   text-transform: uppercase;
 
+  &:active {
+    opacity: 0.3;
+  }
+
   &::after {
     content: " ";
     display: inline-block;
     width: 25px;
     height: 12px;
     margin-left: 12px;
-    vertical-align: middle;
+    vertical-align: baseline;
 
     background: url("../../img/icon-right-arrow-long.svg") center top no-repeat transparent;
   }
   &:hover::after {
     width: 34px;
-  }
 
+    background-image: url("../../img/icon-right-arrow-verylong.svg");
+  }
 }
 
 @media (min-width: $tablet) {

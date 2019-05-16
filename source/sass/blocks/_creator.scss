@@ -2,7 +2,22 @@
   margin-right: 141px;
 
   @include font(16px, 16px, $font-sans-serif, $brown);
+
+  &:active {
+    opacity: 0.3
+  }
 }
+
+.creator__logo {
+  &:hover svg {
+    fill: $green-leaf;
+  }
+
+  &:active {
+    opacity: 0.3
+  }
+}
+
 
 @media (min-width: $tablet) {
   .creator__name {
