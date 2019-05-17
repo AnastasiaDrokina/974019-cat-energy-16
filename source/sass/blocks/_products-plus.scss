@@ -3,6 +3,10 @@
 }
 
 @media (min-width: $desktop) {
+  .products-plus {
+    padding-bottom: 86px;
+  }
+
   .products-plus__wrapper {
     display: flex;
     flex-direction: row;
