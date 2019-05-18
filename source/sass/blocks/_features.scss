@@ -47,6 +47,9 @@
   margin-bottom: 0;
 }
 
+/**
+ * Tablet
+ */
 @media (min-width: $tablet) {
   .features__list {
     display: flex;
@@ -98,6 +101,9 @@
   }
 }
 
+/**
+ * Desktop
+ */
 @media (min-width: $desktop) {
   .features__list {
     justify-content: space-between;

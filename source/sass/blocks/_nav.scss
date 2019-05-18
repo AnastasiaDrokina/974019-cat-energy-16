@@ -60,7 +60,9 @@
   background: url("../../img/icon-close.svg") center top no-repeat transparent;
 }
 
-
+/**
+ * Tablet
+ */
 @media (min-width: $tablet) {
   .nav__toggle {
     display: none;
@@ -97,6 +99,9 @@
   }
 }
 
+/**
+ * Desktop
+ */
 @media (min-width: $desktop) {
   .nav__link {
     @include font(20px, 25px, $font-regular, $black-two);

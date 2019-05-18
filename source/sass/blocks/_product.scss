@@ -62,6 +62,9 @@
   }
 }
 
+/**
+ * Tablet
+ */
 @media (min-width: $tablet) {
   .product {
     position: relative;
@@ -145,6 +148,9 @@
   }
 }
 
+/**
+ * Desktop
+ */
 @media (min-width: $desktop) {
   .product {
     width: 245px;

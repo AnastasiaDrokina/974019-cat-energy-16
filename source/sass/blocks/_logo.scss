@@ -1,3 +1,6 @@
+/**
+ * Tablet
+ */
 @media (min-width: $tablet) {
   .logo__image {
     width: 174px;
@@ -5,6 +8,9 @@
   }
 }
 
+/**
+ * Desktop
+ */
 @media (min-width: $desktop) {
   .logo__image {
     width: 203px;

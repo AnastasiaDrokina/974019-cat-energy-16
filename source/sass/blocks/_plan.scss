@@ -90,6 +90,9 @@
   }
 }
 
+/**
+ * Tablet
+ */
 @media (min-width: $tablet) {
   .plan {
     position: relative;
@@ -152,6 +155,9 @@
   }
 }
 
+/**
+ * Desktop
+ */
 @media (min-width: $desktop) {
   .plan {
     position: static;

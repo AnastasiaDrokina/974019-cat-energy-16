@@ -91,14 +91,13 @@
     fill: $green-leaf;
   }
 
-   
   &.form__input--error + .form__icon {
     fill: rgb(255, 130, 130);
   }
 }
 
 .form__icon {
-  position: absolute; 
+  position: absolute;
   top: 50%;
   right: 16px;
 }

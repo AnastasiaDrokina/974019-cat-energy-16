@@ -47,6 +47,9 @@ svg path {
   padding: 0 20px;
 }
 
+/**
+ * Tablet
+ */
 @media (min-width: $tablet) {
   .container {
     padding: 0 30px;
@@ -55,6 +58,9 @@ svg path {
   }
 }
 
+/**
+ * Desktop
+ */
 @media (min-width: $desktop) {
   .container {
     width: 1300px;

@@ -17,6 +17,9 @@
   text-transform: uppercase;
 }
 
+/**
+ * Tablet
+ */
 @media (min-width: $tablet) {
   .section-form__title {
     margin-bottom: 53px;

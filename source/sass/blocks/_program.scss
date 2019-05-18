@@ -11,7 +11,7 @@
   width: 100%;
   height: 306px;
 
-  background: $green-leaf url("../img/index-background-mobile@1x.jpg") center top no-repeat;
+  background: $green-grass url("../img/index-background-mobile@1x.jpg") center top no-repeat;
   background-size: 320px auto;
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
@@ -47,6 +47,9 @@
   text-transform: uppercase;
 }
 
+/**
+ * Tablet
+ */
 @media (min-width: $tablet) {
   .program__wrapper {
     display: flex;
@@ -94,6 +97,9 @@
   }
 }
 
+/**
+ * Desktop
+ */
 @media (min-width: $desktop) {
   .program {
     position: relative;
