@@ -210,15 +210,15 @@
     background: white;
     border-radius: 50%;
     border: $border;
-    box-shadow: 0px 2px 5px 0 rgba(0, 0, 0, 0.15);
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.15);
     cursor: pointer;
 
     &:hover {
-      box-shadow: 0px 3px 5px 0 rgba(0, 0, 0, 0.25);
+      box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.25);
     }
 
     &:active {
-      box-shadow: 0px 4px 5px 0 rgba(0, 0, 0, 0.3);
+      box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.3);
       border: 2px solid $green-leaf;
     }
 
@@ -282,7 +282,6 @@
   .cat-change__pictures {
     width: 636px;
     margin-right: -42px;
-
   }
 
   .cat-change__decription {
