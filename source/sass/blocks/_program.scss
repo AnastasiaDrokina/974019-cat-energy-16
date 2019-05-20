@@ -1,6 +1,6 @@
 .program {
   position: relative;
-  padding-top: 29px;
+  padding-top: 26px;
 }
 
 .program__background {
@@ -24,7 +24,7 @@
 }
 
 .program__title {
-  margin-bottom: 19px;
+  margin-bottom: 25px;
 
   color: $white;
   line-height: 36px;
@@ -37,9 +37,9 @@
   text-transform: uppercase;
 }
 
-.program__image {
-  margin-bottom: 3px;
-}
+// .program__image {
+//   margin-bottom: 3px;
+// }
 
 .program__link {
   @include font(14px, 18px, $font-regular, $white);

@@ -1,11 +1,11 @@
 .cat-change {
-  padding: 33px 0 38px;
+  padding: 17px 0 5px;
 
   background: $grey;
 }
 
 .cat-change__title {
-  margin-bottom: 33px;
+  margin-bottom: 23px;
 }
 
 .cat-change__decription {
@@ -61,16 +61,17 @@
 }
 
 .cat-change__text {
-  margin-top: 38px;
-  margin-bottom: 44px;
+  margin-top: 17px;
+  margin-bottom: 21px;
 
   @include font(14px, 20px, $font-regular, $black-two);
 }
 
 .cat-change__image {
   display: block;
-  margin: auto;
-  margin-bottom: 35px;
+  margin: auto auto 35px -20px;
+  max-width: inherit;
+  width: 320px;
 }
 
 .cat-change__image--after {
@@ -81,6 +82,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  padding-bottom: 24px;
 }
 
 .cat-change__button {
