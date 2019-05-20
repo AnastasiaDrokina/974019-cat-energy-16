@@ -156,6 +156,7 @@
     content: "";
     position: absolute;
     left: 3px;
+    top: 7px;
 
     display: none;
     width: 25px;
@@ -234,6 +235,13 @@
 .form__radio:checked + .form__label::after {
   display: block;
 }
+
+.form__radio:focus + .form__label,
+.form__checkbox:focus + .form__label {
+  outline: 1px solid #4d90fe;
+  box-shadow: 0 0 5px  #4d90fe;
+}
+
 
 /**
  * Tablet

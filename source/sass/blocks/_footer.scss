@@ -115,12 +115,16 @@
   .footer__address {
     position: absolute;
     top: 110px;
-    left: 43px;
+    left: 0;
 
     width: 570px;
     height: 201px;
     padding: 66px 90px 59px 76px;
 
     background: white;
+  }
+
+  .footer__box .container {
+    position: relative;
   }
 }

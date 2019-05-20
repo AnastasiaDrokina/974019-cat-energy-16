@@ -62,7 +62,8 @@
 }
 
 .plan__link {
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
   margin: 0;
   margin-top: 20px;
 

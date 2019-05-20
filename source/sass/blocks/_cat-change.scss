@@ -47,8 +47,10 @@
 .cat-change__details-text {
   position: absolute;
   bottom: -14px;
-  padding: 0 15px;
+  left: 50%;
 
+  margin-left: -45px;
+  padding: 0 15px;
   width: 90px;
   text-align: center;
 
@@ -170,6 +172,7 @@
   .cat-change__details-text {
     bottom: -5px;
 
+    margin-left: -58px;
     padding: 0 4px;
     width: 117px;
   }
