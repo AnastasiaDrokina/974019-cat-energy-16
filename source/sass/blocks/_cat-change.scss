@@ -133,6 +133,13 @@
  * Tablet
  */
 @media (min-width: $tablet) {
+  .cat-change {
+    padding-bottom: 44px;
+  }
+  .cat-change__heading {
+    margin-bottom: 87px;
+  }
+
   .cat-change__slider {
     flex-wrap: nowrap;
     align-items: center;
@@ -142,22 +149,31 @@
     margin-bottom: 60px;
   }
 
-  .cat-change__details {
-    width: 162px;
+  .cat-change__details-first {
+    width: 178px;
+  }
+
+  .cat-change__details-second {
+    width: 188px;
+    padding-left: 26px;
   }
 
   .cat-change__decription {
-    margin-bottom: 36px;
+    margin-bottom: 56px;
 
     font-size: 16px;
     line-height: 24px;
   }
 
   .cat-change__text {
-    margin-bottom: 44px;
-    margin-left: auto;
+    margin: 0 0 0 auto;
 
     @include font(20px, 20px, $font-regular, $black-two);
+    text-transform: uppercase;
+
+    p {
+      margin: 0;
+    }
   }
 
   .cat-change__price {
@@ -169,6 +185,8 @@
 
   .cat-change__details-title {
     height: 72px;
+
+    font-size: 30px;
   }
 
   .cat-change__details-text {
@@ -180,7 +198,11 @@
   }
 
   .cat-change__button {
+    padding-bottom: 5px;
+
     border-bottom: 1px dotted $grey-border;
+
+    font-size: 20px;
 
     &:hover {
       border-bottom-style: solid;
@@ -194,6 +216,7 @@
   .cat-change__progress {
     width: 428px;
     height: 6px;
+    margin: 0 16px;
 
     border-radius: 2.5px;
     background-color: #dcdcdc;
@@ -259,7 +282,7 @@
   .cat-change__image {
     display: block;
     margin: auto;
-    margin-bottom: 35px;
+    margin-bottom: 28px;
     max-width: none;
     width: 200%;
   }
@@ -278,23 +301,34 @@
     justify-content: space-between;
   }
 
+  .cat-change__heading {
+    margin-bottom: 0;
+  }
+
+  .cat-change__title {
+    margin-bottom: 146px;
+  }
+
+  .cat-change__text {
+    margin-top: 50px;
+    margin-left: 0;
+  }
+
   .cat-change__price {
     display: inline-block;
     vertical-align: baseline;
-    margin-left: 98px;
+    margin-left: 61px;
   }
 
   .cat-change__pictures {
-    width: 636px;
+    width: 696px;
+    margin-top: -55px;
     margin-right: -42px;
   }
 
   .cat-change__decription {
-    max-width: 430px;
-  }
-
-  .cat-change__text {
-    margin-left: 0;
+    max-width: 435px;
+    margin-bottom: 66px;
   }
 
   .cat-change__slider {
@@ -309,5 +343,7 @@
 
   .cat-change__slider-toggle {
     justify-content: flex-end;
+    margin-top: 5px;
+    margin-right: -6px;
   }
 }

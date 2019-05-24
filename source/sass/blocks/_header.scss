@@ -32,10 +32,13 @@
  */
 @media (min-width: $tablet) {
   .header {
+    padding-top: 15px;
+
     border: none;
   }
 
   .header__wrapper {
+    padding: 9px 0;
     border-bottom: none;
   }
 
@@ -58,7 +61,7 @@
   .header--home {
     position: absolute;
     z-index: 1;
-    top: 53px;
+    top: 30px;
     left: 50%;
 
     margin-left: -650px;

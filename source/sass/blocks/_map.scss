@@ -1,3 +1,7 @@
+.map__js {
+  height: 360px;
+}
+
 .map__title {
   @include font(16px, 20px, $font-regular, $black-two);
   text-transform: uppercase;
@@ -46,6 +50,10 @@
  * Tablet
  */
 @media (min-width: $tablet) {
+  .map__js {
+    height: 400px;
+  }
+
   .map__title {
     @include font(20px, 25px, $font-regular, $black-two);
   }
@@ -60,7 +68,11 @@
   }
 
   .map__address {
-    margin-bottom: 11px;
+    margin-bottom: 18px;
+  }
+
+  .map__city {
+    margin-right: 5px;
   }
 
   .map__image-wrapper {

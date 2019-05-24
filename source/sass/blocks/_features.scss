@@ -51,6 +51,19 @@
  * Tablet
  */
 @media (min-width: $tablet) {
+  .features {
+    padding-top: 47px;
+    padding-bottom: 0;
+  }
+
+  .features__title {
+    margin-bottom: 74px;
+  }
+
+  .features__text {
+    @include font(16px, 24px, $font-sans-serif, $brown);
+  }
+
   .features__list {
     display: flex;
     flex-wrap: wrap;
@@ -61,18 +74,18 @@
     width: 200px;
     flex-direction: column;
     align-items: flex-start;
-    margin-bottom: 137px;
+    margin-bottom: 109px;
 
     &::before {
       width: 80px;
       height: 80px;
-      margin-bottom: 37px;
+      margin-bottom: 30px;
     }
 
     &::after {
       position: absolute;
       display: block;
-      left: 100px;
+      left: 116px;
       top: -40px;
       z-index: -1;
 
@@ -96,7 +109,7 @@
     }
 
     &:nth-child(odd) {
-      margin-right: 215px;
+      margin-right: 185px;
     }
   }
 }
@@ -111,18 +124,22 @@
   }
 
   .features__item {
-    width: 232px;
+    width: 243px;
+
+    &:before {
+      margin-bottom: 33px;
+    }
 
     &:nth-child(1) .features__text {
       width: 201px;
     }
 
     &:nth-child(2) .features__text {
-      width: 220px;
+      width: 230px;
     }
 
     &:nth-child(3) .features__text {
-      width: 203px;
+      width: 213px;
     }
 
     &:nth-child(4) .features__text {

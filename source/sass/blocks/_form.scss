@@ -53,7 +53,7 @@
 .form__label {
   position: relative;
 
-  margin-right: 16px;
+  margin-right: 12px;
 
   @include font(16px, 18px, $font-regular, $black);
   color: $black;
@@ -65,7 +65,7 @@
 
 .form__input {
   width: 100%;
-  padding: 15px;
+  padding: 13px;
 
   @include font(16px, 18px, $font-regular, $black);
   text-transform: uppercase;

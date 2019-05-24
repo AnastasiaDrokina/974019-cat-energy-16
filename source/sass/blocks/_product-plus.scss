@@ -10,7 +10,7 @@
 }
 
 .product-plus__title {
-  margin: 0 0 15px;
+  margin: 0 0 13px;
 
   @include font(16px, 16px, $font-regular, $black);
   text-transform: uppercase;
@@ -58,6 +58,8 @@
   }
 
   .product-plus__title {
+    margin-bottom: 24px;
+
     @include font(20px, 20px, $font-regular, $black);
   }
 

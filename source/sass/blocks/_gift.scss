@@ -35,12 +35,13 @@
 @media (min-width: $tablet) {
   .gift {
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
     text-align: left;
     width: 708px;
     min-height: 200px;
-    margin-top: 39px;
-    margin-bottom: 76px;
+    margin-top: 66px;
+    margin-bottom: 25px;
+    padding: 38px 120px 43px 90px;
 
     background: url("../../img/gift-photo-tablet@1x.jpg") center top no-repeat transparent;
 
