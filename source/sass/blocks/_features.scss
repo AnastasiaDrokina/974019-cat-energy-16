@@ -1,9 +1,9 @@
 .features {
-  padding: 32px 0 42px;
+  padding: 16px 0 42px;
 }
 
 .features__title {
-  margin-bottom: 35px;
+  margin-bottom: 29px;
 }
 
 .features__list {
@@ -23,7 +23,7 @@
     height: 60px;
     flex-shrink: 0;
 
-    background: center no-repeat  $green;
+    background: center no-repeat  $green-leaf;
   }
 
   &:nth-child(1)::before {
@@ -47,7 +47,23 @@
   margin-bottom: 0;
 }
 
+/**
+ * Tablet
+ */
 @media (min-width: $tablet) {
+  .features {
+    padding-top: 47px;
+    padding-bottom: 0;
+  }
+
+  .features__title {
+    margin-bottom: 74px;
+  }
+
+  .features__text {
+    @include font(16px, 24px, $font-sans-serif, $brown);
+  }
+
   .features__list {
     display: flex;
     flex-wrap: wrap;
@@ -55,22 +71,21 @@
 
   .features__item {
     position: relative;
-    width: 50%;
+    width: 200px;
     flex-direction: column;
     align-items: flex-start;
-    margin-bottom: 137px;
-    padding-right: 156px;
+    margin-bottom: 109px;
 
     &::before {
       width: 80px;
       height: 80px;
-      margin-bottom: 37px;
+      margin-bottom: 30px;
     }
 
     &::after {
       position: absolute;
       display: block;
-      left: 100px;
+      left: 116px;
       top: -40px;
       z-index: -1;
 
@@ -92,9 +107,16 @@
     &:nth-child(4)::after {
       content: "4";
     }
+
+    &:nth-child(odd) {
+      margin-right: 185px;
+    }
   }
 }
 
+/**
+ * Desktop
+ */
 @media (min-width: $desktop) {
   .features__list {
     justify-content: space-between;
@@ -102,6 +124,30 @@
   }
 
   .features__item {
-    padding-right: 116px;
+    width: 243px;
+
+    &::before {
+      margin-bottom: 33px;
+    }
+
+    &:nth-child(1) .features__text {
+      width: 201px;
+    }
+
+    &:nth-child(2) .features__text {
+      width: 230px;
+    }
+
+    &:nth-child(3) .features__text {
+      width: 213px;
+    }
+
+    &:nth-child(4) .features__text {
+      width: 244px;
+    }
+
+    &:nth-child(odd) {
+      margin-right: 0;
+    }
   }
 }

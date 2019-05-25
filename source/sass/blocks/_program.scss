@@ -1,8 +1,18 @@
 .program {
-  padding-top: 29px;
-  // padding-top: 140px;
+  position: relative;
+  padding-top: 26px;
+}
 
-  background: url("../img/index-background-mobile@1x.jpg") center top no-repeat transparent;
+.program__background {
+  position: absolute;
+  top: 0;
+  z-index: -1;
+
+  width: 100%;
+  height: 306px;
+
+  background: $green-grass url("../img/index-background-mobile@1x.jpg") center top no-repeat;
+  background-size: 320px auto;
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
     background-image: url("../img/index-background-mobile@2x.jpg");
@@ -14,7 +24,7 @@
 }
 
 .program__title {
-  margin-bottom: 19px;
+  margin-bottom: 25px;
 
   color: $white;
   line-height: 36px;
@@ -27,19 +37,18 @@
   text-transform: uppercase;
 }
 
-.program__image {
-  margin-bottom: 3px;
-}
-
 .program__link {
   @include font(14px, 18px, $font-regular, $white);
-  background: $green;
+  background: $green-leaf;
   text-transform: uppercase;
 }
 
+/**
+ * Tablet
+ */
 @media (min-width: $tablet) {
   .program {
-    background: none;
+    padding-top: 44px;
   }
 
   .program__wrapper {
@@ -47,9 +56,13 @@
     flex-direction: column;
   }
 
+  .program__background {
+    display: none;
+  }
+
   .program__title {
     width: 420px;
-    margin-bottom: 33px;
+    margin-bottom: 22px;
     margin-left: 90px;
 
     text-align: left;
@@ -59,7 +72,7 @@
   }
 
   .program__slogan {
-    margin-bottom: 29px;
+    margin-bottom: 20px;
     width: 420px;
     margin-left: 90px;
 
@@ -76,38 +89,67 @@
   }
 
   .program__link {
-    width: 245px;
+    position: absolute;
+    top: 274px;
+
+    width: 244px;
     margin-left: 90px;
+    padding: 16px 10px;
+
+    @include font(20px, 20px, $font-regular, $white);
   }
 }
 
+/**
+ * Desktop
+ */
 @media (min-width: $desktop) {
   .program {
     position: relative;
 
-    padding-top: 237px;
-
-    background: url("../img/index-background-desktop@1x.jpg") right top no-repeat transparent;
-
-    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background-image: url("../img/index-background-desktop@2x.jpg");
-      background-size: 320px auto;
-    }
+    padding-top: 223px;
   }
 
   .program__wrapper {
+    position: relative;
     margin-bottom: 253px;
+  }
+
+  .program__background {
+    left: 50%;
+
+    display: block;
+    height: 696px;
+    width: 50%;
+
+    background: $green-leaf url("../img/index-background-desktop@1x.jpg") left top;
+    background-size: 720px auto;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/index-background-desktop@2x.jpg");
+      background-size: 720px auto;
+    }
+  }
+
+  .program__title,
+  .program__slogan {
+    margin-left: 80px;
   }
 
   .program__plan {
     display: flex;
-    padding: 22px 0 20px;
+    padding: 99px 0 20px;
     justify-content: space-between;
   }
 
   .program__image {
     position: absolute;
-    right: 324px;
-    top: 159px;
+    right: 218px;
+    bottom: -216px;
+  }
+
+  .program__link {
+    top: 234px;
+    margin-left: 80px;
   }
 }

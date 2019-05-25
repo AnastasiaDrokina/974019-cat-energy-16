@@ -1,10 +1,36 @@
 .products-plus {
-  padding-top: 15px;
+  padding-top: 4px;
+  padding-bottom: 35px;
 }
 
+.products-plus__wrapper {
+  margin-top: 32px;
+}
+
+/**
+ * Tablet
+ */
+@media (min-width: $tablet) {
+  .products-plus {
+    margin-top: -103px;
+  }
+}
+
+/**
+ * Desktop
+ */
 @media (min-width: $desktop) {
+  .products-plus {
+    padding-bottom: 86px;
+  }
+
   .products-plus__wrapper {
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .products-plus__title {
+    margin-bottom: 81px;
   }
 }

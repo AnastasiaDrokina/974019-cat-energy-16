@@ -1,22 +1,38 @@
 .button {
   display: block;
-  padding: 12px 12px;
+  padding: 10px;
   width: 100%;
 
   @include font(16px, 20px, $font-regular, $white);
   text-transform: uppercase;
 
-  background: $green;
+  background: $green-leaf;
   border: none;
   text-align: center;
 
   cursor: pointer;
+
+  &:hover {
+    background: $green-grass;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+  }
 }
 
 .button--more {
   margin-bottom: 0;
 
   color: $brown;
-
   background: $grey;
+
+  &:hover {
+    background: $grey-two;
+  }
+
+  &:active {
+    background: $grey-two;
+    color: rgba(68, 68, 68, 0.3);
+  }
 }

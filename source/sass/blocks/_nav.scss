@@ -30,6 +30,14 @@
   @include font(20px, 20px, $font-medium, $black-two);
   text-align: center;
   text-transform: uppercase;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.2;
+  }
 }
 
 
@@ -52,7 +60,9 @@
   background: url("../../img/icon-close.svg") center top no-repeat transparent;
 }
 
-
+/**
+ * Tablet
+ */
 @media (min-width: $tablet) {
   .nav__toggle {
     display: none;
@@ -78,27 +88,44 @@
   }
 
   .nav__link {
-    padding: 0;
+    margin-bottom: -6px;
+    padding: 0 0 6px;
+
+    border-bottom: 2px solid transparent;
 
     @include font(18px, 25px, $font-regular, $black);
   }
 
   .nav__link--active {
-    border-bottom: 2px solid $green;
-    padding-bottom: 10px;
+    border-bottom-color: $green-leaf;
   }
 }
 
+/**
+ * Desktop
+ */
 @media (min-width: $desktop) {
+  .nav__item {
+    margin-right: 34px;
+  }
+
   .nav__link {
     @include font(20px, 25px, $font-regular, $black-two);
+
+    &:hover {
+      opacity: 0.6;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
   }
 
   .nav__link--home {
     @include font(20px, 25px, $font-regular, $white);
   }
 
-  .nav__link--active {
-    border-bottom-color: $green;
+  .header--home .nav__link--active {
+    border-bottom-color: $white;
   }
 }
