@@ -86,13 +86,13 @@
     margin-left: 12px;
     vertical-align: baseline;
 
-    background: url("../../img/icon-right-arrow-long.svg") center top no-repeat transparent;
+    background: url("../img/icon-right-arrow-long.svg") center top no-repeat transparent;
   }
 
   &:hover::after {
     width: 34px;
 
-    background-image: url("../../img/icon-right-arrow-verylong.svg");
+    background-image: url("../img/icon-right-arrow-verylong.svg");
   }
 }
 
