@@ -58,12 +58,17 @@
  * Desktop
  */
 @media (min-width: $desktop) {
+  .header {
+    padding-top: 45px;
+  }
+
   .header--home {
     position: absolute;
     z-index: 1;
-    top: 30px;
+    top: 45px;
     left: 50%;
 
     margin-left: -650px;
+    padding-top: 0;
   }
 }

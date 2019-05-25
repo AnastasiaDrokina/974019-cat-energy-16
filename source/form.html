@@ -52,7 +52,7 @@
           <h1 class="section-form__title  title">Подбор программы</h1>
           <p class="section-form__text">Заполните анкету и мы подберем <br> программу питания для вашего кота</p>
           <form class="form" action="https://echo.htmlacademy.ru" method="post">
-            <fieldset class="form__fieldset">
+            <fieldset class="form__fieldset  form__fieldset--one">
               <legend class="visually-hidden">Анкета вашего кота</legend>
               <div class="form__wrapper">
                 <div class="form__column">
@@ -87,13 +87,13 @@
                 </div>
               </div>
             </fieldset>
-            <fieldset class="form__fieldset">
+            <fieldset class="form__fieldset  form__fieldset--two">
               <legend class="form__legend  title title--smaller">
                 <span class="form__subtitle">Контактные данные (владельца кота)</span>
               </legend>
               <div class="form__wrapper">
                 <div class="form__column">
-                  <div class="form__field">
+                  <div class="form__field form__field--email">
                     <label class="form__label" for="email">E-mail:*</label>
                     <input class="form__input  form__input--error  form__input--email" type="email" name="email-field" id="email" placeholder="kuklachev@gmail.com">
                     <svg class="form__icon  form__mail">
@@ -112,7 +112,7 @@
                 </div>
               </div>
             </fieldset>
-            <fieldset class="form__fieldset">
+            <fieldset class="form__fieldset  form__fieldset--three">
               <legend class="form__legend  title title--smaller">
                 <span class="form__subtitle">Комментарий</span>
               </legend>
@@ -121,7 +121,7 @@
                 <textarea class="form__textarea  form__input" name="comment-field" id="comment" placeholder="Расскажите обо всех повадках кота"></textarea>
               </div>
             </fieldset>
-            <fieldset class="form__fieldset">
+            <fieldset class="form__fieldset  form__fieldset--four">
               <legend class="form__legend  title  title--smaller">
                 <span class="form__subtitle">Дополнительно</span>
               </legend>
@@ -164,7 +164,7 @@
         </div>
       </section>
     </main>
-    <footer class="footer">
+    <footer class="footer footer--form">
       <div class="footer__map  map">
         <div class="footer__box">
           <div class="container">

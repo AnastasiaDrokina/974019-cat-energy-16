@@ -184,8 +184,7 @@
 @media (min-width: $desktop) {
   .product {
     width: 245px;
-    margin-right: 40px;
-    margin-left: 0;
+    margin: 0 40px 143px 0;
 
     background: $grey;
 
@@ -194,11 +193,19 @@
     }
   }
 
-  .product__image {
-    margin-left: -122px;
+  .product--more {
+    padding-left: 35px;
+    padding-right: 35px;
+
+    background: none;
   }
 
-  .product--more {
-    background: none;
+  .product__wrapper--description {
+    margin-bottom: 17px;
+  }
+
+  .product__image {
+    bottom: 303px;
+    margin-left: -122px;
   }
 }

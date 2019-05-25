@@ -94,6 +94,7 @@
 
     width: 244px;
     margin-left: 90px;
+    padding: 16px 10px;
 
     @include font(20px, 20px, $font-regular, $white);
   }
