@@ -5,11 +5,6 @@
     <title>HTML Academy: Кэт энерджи</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <link rel="stylesheet" href="css/style.css">
-    <script>
-      // Picture element HTML5 shiv
-      document.createElement( "picture" );
-    </script>
-    <script src="js/picturefill.min.js" async></script>
   </head>
   <body>
     <div style="display:none">
@@ -25,7 +20,7 @@
               <img class="logo__image" src="img/logo-mobile.svg" width="191" height="37" alt="Логотип Cat Energy">
             </picture>
           </a>
-          <button class="nav__toggle" type="button">
+          <button class="nav__toggle nav__toggle--opened" type="button">
             <span class="visually-hidden">Открыть меню</span>
           </button>
         </div>
@@ -48,7 +43,6 @@
     </header>
     <main class="main">
       <section class="program">
-        <div class="program__background"></div>
         <div class="program__container  container">
           <div class="program__wrapper">
             <h1 class="program__title  title">Функциональное <br> питание для котов</h1>
@@ -105,13 +99,13 @@
             <h2 class="cat-change__title  title">Живой пример</h2>
             <p class="cat-change__decription">Борис сбросил 5 кг за месяц, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
             <div class="cat-change__slider">
-              <div class="cat-change__details  cat-change__details-first">
+              <div class="cat-change__details  cat-change__details--first">
                 <span class="cat-change__details-title">
                   5 кг
                   <span class="cat-change__details-text">cнижение веса</span>
                 </span>
               </div>
-              <div class="cat-change__details  cat-change__details-second">
+              <div class="cat-change__details  cat-change__details--second">
                 <span class="cat-change__details-title">
                   60 дней
                   <span class="cat-change__details-text">затрачено времени</span>
@@ -156,7 +150,7 @@
     <footer class="footer  footer--home">
       <div class="footer__map footer__map--home  map">
         <div class="footer__box">
-          <div class="container">
+          <div class="footer__contain container">
             <div class="footer__address">
               <p class="map__title">Приглашаем <br> к сотрудничеству <br> дилеров!</p>
               <div class="map__wrapper">
@@ -212,8 +206,8 @@
             </li>
           </ul>
           <div class="footer__creator  creator">
-            <a class="creator__name" href="https://htmlacademy.ru/intensive/adaptive">Html Academy</a>
-            <a class="creator__logo" href="https://htmlacademy.ru/intensive/adaptive" aria-label="Переход на страницу Html Academy">
+            <a class="creator__name" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+            <a class="creator__logo" href="https://htmlacademy.ru/intensive/adaptive" aria-label="Переход на страницу HTML Academy">
               <include src="build/img/htmlacademy.svg"></include>
             </a>
           </div>
@@ -221,5 +215,7 @@
       </div>
     </footer>
     <script src="js/script.js"></script>
+    <script src="js/picturefill.min.js"></script>
+    <script src="js/svgxuse.min.js"></script>
   </body>
 </html>

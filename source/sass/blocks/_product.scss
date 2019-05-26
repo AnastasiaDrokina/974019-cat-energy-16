@@ -16,7 +16,7 @@
   text-align: center;
 }
 
-.product__wrapper--description {
+.product__description {
   flex-grow: 1;
   margin-bottom: 23px;
 
@@ -108,7 +108,7 @@
     text-align: center;
   }
 
-  .product__wrapper--description {
+  .product__description {
     margin-bottom: 22px;
   }
 
@@ -184,7 +184,7 @@
 @media (min-width: $desktop) {
   .product {
     width: 245px;
-    margin: 0 40px 143px 0;
+    margin: 0 80px 143px 0;
 
     background: $grey;
 
@@ -200,7 +200,7 @@
     background: none;
   }
 
-  .product__wrapper--description {
+  .product__description {
     margin-bottom: 17px;
   }
 

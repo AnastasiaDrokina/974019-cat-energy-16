@@ -99,7 +99,8 @@
   @include font(16px, 18px, $font-regular, $black);
   text-transform: uppercase;
 
-  border: 1px solid rgba($grey-border, 0.5);
+  outline: 1px solid rgba($grey-border, 0.5);
+  border: none;
 
   &:hover {
     border-color: $grey-border;
@@ -107,12 +108,11 @@
 
   &:active,
   &:focus {
-    border: 2px solid $brown;
-    outline: 0;
+    outline: 2px solid $brown;
   }
 
   &.form__input--error {
-    border: $error;
+    outline: $error;
   }
 
   &:active + .form__icon {
@@ -162,6 +162,7 @@
 .form__wrapper--checkbox {
   .form__column + .form__column {
     margin-top: 10px;
+    padding-left: 0;
   }
 }
 
@@ -203,6 +204,10 @@
 
 .form__checkbox:checked + .form__label::after {
   display: block;
+}
+
+.form__checkbox:disabled + .form__label {
+  opacity: 0.3;
 }
 
 .form__radios {
@@ -269,6 +274,10 @@
 
 .form__radio:checked + .form__label::after {
   display: block;
+}
+
+.form__radio:disabled + .form__label {
+  opacity: 0.3;
 }
 
 .form__radio:focus + .form__label,

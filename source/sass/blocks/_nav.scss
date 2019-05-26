@@ -105,7 +105,12 @@
  * Desktop
  */
 @media (min-width: $desktop) {
+  .nav__list {
+    max-width: 600px;
+  }
+
   .nav__item {
+    margin-bottom: 10px;
     margin-right: 34px;
   }
 
