@@ -14,7 +14,7 @@
 }
 
 .form__fieldset--two {
-  padding-bottom: 8px;
+  padding-bottom: 16px;
 }
 
 .form__fieldset--three {
@@ -68,7 +68,7 @@
 }
 
 .form__column + .form__column {
-  margin-top: 20px;
+  margin-top: 29px;
 }
 
 .form__field {
@@ -136,6 +136,10 @@
   margin-top: -7px;
 }
 
+.form__field--email {
+  margin-bottom: -13px;
+}
+
 .form__phone {
   width: 21px;
   height: 21px;
@@ -155,6 +159,8 @@
 }
 
 .form__text {
+  margin-top: -8px;
+
   @include font(14px, 16px);
   text-align: center;
 }
