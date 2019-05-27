@@ -115,7 +115,8 @@
     outline: $error;
   }
 
-  &:active + .form__icon {
+  &:active + .form__icon,
+  &:focus + .form__icon {
     fill: $green-leaf;
   }
 
