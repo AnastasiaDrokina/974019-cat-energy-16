@@ -91,7 +91,7 @@
     position: relative;
 
     width: 324px;
-    padding: 40px;
+    padding: 160px 40px 40px;
     margin: 0 0 139px;
     min-height: 431px;
 
@@ -101,6 +101,10 @@
 
     background: $grey;
     border: none;
+  }
+
+  .product--more {
+    padding: 40px;
   }
 
   .product__wrapper {
@@ -129,7 +133,8 @@
   .product__image {
     position: absolute;
     left: 50%;
-    bottom: 305px;
+    bottom: 100%;
+    transform: translateY(126px);
 
     margin: 0 0 0 -162px;
     width: auto;
@@ -206,7 +211,6 @@
   }
 
   .product__image {
-    bottom: 303px;
     margin-left: -122px;
   }
 }

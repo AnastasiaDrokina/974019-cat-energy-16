@@ -11,10 +11,22 @@
 
 .form__fieldset--one {
   padding-bottom: 28px;
+
+  .form__field {
+    margin-bottom: 15px;
+  }
+
+  .form__column + .form__column {
+    margin-top: 25px;
+  }
 }
 
 .form__fieldset--two {
-  padding-bottom: 16px;
+  padding-bottom: 14px;
+
+  .form__legend {
+    margin-bottom: 35px;
+  }
 }
 
 .form__fieldset--three {
@@ -45,10 +57,10 @@
     content: "";
     position: absolute;
     z-index: -1;
-    top: 50%;
+    top: 12px;
     left: 0;
     right: 0;
-    transform: translateY(-50%);
+
     height: 3px;
 
     background: $green-leaf;
@@ -61,7 +73,7 @@
 
 .form__subtitle {
   display: inline-block;
-  max-width: 230px;
+  max-width: 222px;
   margin-left: -20px;
   padding: 0 20px;
   background: $white;
@@ -82,7 +94,7 @@
 .form__label {
   position: relative;
 
-  margin-right: 12px;
+  margin-right: 16px;
 
   @include font(16px, 18px, $font-regular, $black);
   color: $black;
@@ -128,7 +140,7 @@
 .form__icon {
   position: absolute;
   top: 50%;
-  right: 16px;
+  right: 12px;
 }
 
 .form__mail {
@@ -139,12 +151,22 @@
 
 .form__field--email {
   margin-bottom: -13px;
+
+  .form__label {
+    margin-right: 11px;
+  }
 }
 
 .form__phone {
   width: 21px;
   height: 21px;
   margin-top: -10px;
+}
+
+.form__field--phone {
+  .form__label {
+    margin-right: 11px;
+  }
 }
 
 .form__input--email {
@@ -218,7 +240,7 @@
 }
 
 .form__radios {
-  padding: 20px 20px 22px 0;
+  padding: 17px 20px 18px 0;
 
   border-top: 1px solid $grey-border;
   border-bottom: 1px solid $grey-border;
@@ -298,7 +320,7 @@
  */
 @media (min-width: $tablet) {
   .section-form {
-    padding-bottom: 52px;
+    padding-bottom: 57px;
   }
 
   .form {
@@ -311,10 +333,26 @@
 
   .form__fieldset--one {
     padding-bottom: 81px;
+
+    .form__field {
+      margin-bottom: 20px;
+    }
+
+    .form__radios .form__field {
+      margin-bottom: 12px;
+    }
+
+    .form__column + .form__column {
+      margin-top: 72px;
+    }
   }
 
   .form__fieldset--two {
-    padding-bottom: 48px;
+    padding-bottom: 51px;
+
+    .form__legend {
+      margin-bottom: 77px;
+    }
 
     .form__column + .form__column {
       margin-top: 18px;
@@ -325,7 +363,7 @@
     padding-bottom: 51px;
 
     .form__legend {
-      margin-bottom: 85px;
+      margin-bottom: 79px;
     }
   }
 
@@ -343,6 +381,7 @@
     font-size: 36px;
 
     &::before {
+      top: 16px;
       left: -40px;
       right: -35px;
     }
@@ -367,8 +406,18 @@
     margin-bottom: 20px;
   }
 
+  
   .form__label {
+    margin-right: 19px;
     font-size: 20px;
+  }
+
+  .form__field--email .form__label {
+    margin-right: 19px;
+  }
+
+  .form__field--phone .form__label {
+    margin-right: 14px;
   }
 
   .form__wrapper--checkbox {
@@ -410,7 +459,6 @@
 
     .form__column {
       width: 50%;
-      padding: 0 30px;
 
       &:first-child {
         padding-left: 0;
@@ -418,6 +466,7 @@
       }
 
       &:last-child {
+        padding-left: 21px;
         padding-right: 0;
       }
     }
@@ -434,21 +483,24 @@
   }
 
   .form__text {
-    margin-top: 20px;
+    margin-top: 15px;
     text-align: left;
+    font-size: 16px;
   }
 
   .form__input {
-    padding: 17px 20px;
+    padding: 11px 18px;
+    font-size: 20px;
   }
 
   .form__textarea {
     height: 174px;
     padding: 17px 20px;
+    font-size: 20px;
   }
 
   .form__radios {
-    padding: 25px 27px;
+    padding: 25px 27px 14px 27px;
 
     border: 1px solid $grey-border;
   }
@@ -510,7 +562,7 @@
       width: 100%;
 
       &:first-child {
-        padding-right: 39px;
+        padding-right: 46px;
       }
     }
 
@@ -520,23 +572,23 @@
     }
   }
 
-  .form__field {
-    flex-grow: 1;
-  }
-
   .form__fieldset {
     padding-right: 0;
   }
 
   .form__fieldset--one {
     padding-bottom: 55px;
+
+    .form__column + .form__column {
+      margin-top: 0;
+    }
   }
 
   .form__fieldset--two {
     padding-bottom: 53px;
 
     .form__legend {
-      margin-bottom: 82px;
+      margin-bottom: 79px;
     }
 
     .form__column + .form__column {
@@ -552,7 +604,7 @@
     padding-bottom: 30px;
 
     .form__legend {
-      margin-bottom: 64px;
+      margin-bottom: 60px;
     }
 
     .form__column,
@@ -591,11 +643,33 @@
     margin-top: 0;
   }
 
+  .form__field {
+    flex-grow: 1;
+  }
+
+  .form__field--email {
+    .form__label {
+      margin-right: 24px;
+    }
+  }
+
   .form__label {
-    margin-right: 18px;
+    margin-right: 21px;
+  }
+
+  .form__checkbox + .form__label {
+    &::before {
+      margin-right: 19px;
+    }
+  }
+
+  .form__icon {
+    right: 19px;
   }
 
   .form__text {
+    margin-top: 17px;
+    margin-left: 13px;
     font-size: 16px;
     text-align: left;
   }

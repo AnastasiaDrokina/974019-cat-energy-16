@@ -25,19 +25,17 @@
         </button>
       </div>
       <nav class="nav nav--closed  nav--nojs  header__nav">
-        <div class="nav__wrapper">
-          <ul class="nav__list">
-            <li class="nav__item">
-              <a class="nav__link  nav__link--active  nav__link--home" href="index.html">Главная</a>
-            </li>
-            <li class="nav__item">
-              <a class="nav__link  nav__link--home" href="catalog.html">Каталог продукции</a>
-            </li>
-            <li class="nav__item">
-              <a class="nav__link  nav__link--home" href="form.html">Подбор программы</a>
-            </li>
-          </ul>
-        </div>
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a class="nav__link  nav__link--active  nav__link--home" href="index.html">Главная</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link  nav__link--home" href="catalog.html">Каталог продукции</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link  nav__link--home" href="form.html">Подбор программы</a>
+          </li>
+        </ul>
       </nav>
     </div>
   </header>
@@ -53,6 +51,7 @@
             <source type="image/webp" media="(min-width: 1300px)" srcset="img/index-can-desktop@1x.webp 1x, img/index-can-desktop@2x.webp 2x" />
             <source type="image/webp" media="(min-width: 768px)" srcset="img/index-can-tablet@1x.webp 1x, img/index-can-tablet@2x.webp 2x" />
             <source type="image/webp" srcset="img/index-can-mobile@1x.webp 1x, img/index-can-mobile@2x.webp 2x" />
+
             <source media="(min-width: 1300px)" srcset="img/index-can-desktop@1x.png 1x, img/index-can-desktop@2x.png 2x" />
             <source media="(min-width: 768px)" srcset="img/index-can-tablet@1x.jpg 1x, img/index-can-tablet@2x.jpg 2x" />
             <img class="program__image" src="img/index-can-mobile@1x.png" srcset="img/index-can-mobile@2x.png 2x" width="280" height="270" alt="Cat Energy Pro 500г Курица" />
@@ -147,11 +146,19 @@
         <div class="cat-change__wrapper-slider">
           <div class="cat-change__pictures">
             <picture class="cat-change__picture">
+              <source type="image/webp" media="(min-width: 1300px)" srcset="img/before-desktop@1x.webp 1x, img/before-desktop@2x.webp 2x" />
+              <source type="image/webp" media="(min-width: 768px)" srcset="img/before-tablet@1x.webp 1x, img/before-tablet@2x.webp 2x" />
+              <source type="image/webp" srcset="img/before-mobile@1x.webp 1x, img/before-mobile@2x.webp 2x" />
+
               <source media="(min-width: 1300px)" srcset="img/before-desktop@1x.png 1x, img/before-desktop@2x.png 2x" />
               <source media="(min-width: 768px)" srcset="img/before-tablet@1x.png 1x, img/before-tablet@2x.png 2x" />
               <img class="cat-change__image cat-change__image--before" src="img/before-mobile@1x.png" srcset="img/before-mobile@2x.png 2x" width="311" height="232" alt="Изображение кота" />
             </picture>
             <picture class="cat-change__picture">
+              <source type="image/webp" media="(min-width: 1300px)" srcset="img/after-desktop@1x.webp 1x, img/after-desktop@2x.webp 2x" />
+              <source type="image/webp" media="(min-width: 768px)" srcset="img/after-tablet@1x.webp 1x, img/after-tablet@2x.webp 2x" />
+              <source type="image/webp" srcset="img/after-mobile@1x.webp 1x, img/after-mobile@2x.webp 2x" />
+
               <source media="(min-width: 1300px)" srcset="img/after-desktop@1x.png 1x, img/after-desktop@2x.png 2x" />
               <source media="(min-width: 768px)" srcset="img/after-tablet@1x.png 1x, img/after-tablet@2x.png 2x" />
               <img class="cat-change__image  cat-change__image--after" src="img/after-mobile@1x.png" srcset="img/after-mobile@2x.png 2x" width="311" height="232" alt="Изображение кота" />
@@ -162,7 +169,9 @@
             <div class="cat-change__progress">
               <label class="cat-change__label">
                 <input type="checkbox" class="cat-change__input visually-hidden" />
-                <span class="cat-change__toggle"></span>
+                <button class="cat-change__toggle">
+                  <span class="visually-hidden">Переключатель "было" "стало"</span>
+                </button>
               </label>
               <div class="cat-change__slider-control"></div>
             </div>
