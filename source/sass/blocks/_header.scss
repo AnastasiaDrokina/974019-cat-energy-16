@@ -67,8 +67,14 @@
     z-index: 1;
     top: 45px;
     left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    max-width: 1300px;
 
-    margin-left: -650px;
     padding-top: 0;
+  }
+
+  .header__nav {
+    margin-top: 10px;
   }
 }

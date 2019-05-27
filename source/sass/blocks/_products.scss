@@ -1,5 +1,5 @@
 .products {
-  padding: 16px 0 25px;
+  padding: 16px 0 8px;
 }
 
 .products__title {
@@ -33,5 +33,9 @@
 @media (min-width: $desktop) {
   .products {
     padding: 60px 0 25px;
+  }
+
+  .products__wrapper {
+    justify-content: flex-start;
   }
 }

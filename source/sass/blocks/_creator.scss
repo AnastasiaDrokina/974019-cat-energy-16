@@ -11,8 +11,8 @@
   margin-right: -7px;
 
   svg {
-    width: 100%;
-    height: 100%;
+    width: 39px;
+    height: 45px;
     margin-right: -6px;
   }
 
@@ -30,6 +30,19 @@
  */
 @media (min-width: $tablet) {
   .creator__name {
-    margin-right: 23px;
+    margin-right: 15px;
+  }
+}
+
+/**
+ * Desktop
+ */
+@media (min-width: $desktop) {
+  .creator__name {
+    margin-top: 8px;
+  }
+
+  .creator__logo {
+    margin-top: 15px;
   }
 }

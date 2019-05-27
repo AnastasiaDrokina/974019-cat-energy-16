@@ -86,13 +86,14 @@
     margin-left: 12px;
     vertical-align: baseline;
 
-    background: url("../../img/icon-right-arrow-long.svg") center top no-repeat transparent;
+    background: url("../img/icon-right-arrow-long.svg") center top no-repeat
+      transparent;
   }
 
   &:hover::after {
     width: 34px;
 
-    background-image: url("../../img/icon-right-arrow-verylong.svg");
+    background-image: url("../img/icon-right-arrow-verylong.svg");
   }
 }
 
@@ -105,7 +106,7 @@
     z-index: 1;
 
     padding: 78px 310px 58px 55px;
-    margin-top: -5px;
+    margin-top: 0;
   }
 
   .plan__title {
@@ -148,7 +149,7 @@
   .plan__link {
     font-size: 20px;
     line-height: 20px;
-    margin-top: 37px;
+    margin-top: 40px;
 
     &::after {
       margin-left: 21px;
@@ -191,7 +192,6 @@
 
   .plan__title {
     position: relative;
-
 
     &::before {
       content: " ";

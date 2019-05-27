@@ -47,7 +47,7 @@
   height: 19px;
   margin-left: auto;
 
-  background: url("../../img/icon-mobile-menu.svg") center top no-repeat transparent;
+  background: url("../img/icon-mobile-menu.svg") center top no-repeat transparent;
 
   cursor: pointer;
   border: none;
@@ -57,7 +57,7 @@
   width: 19px;
   height: 19px;
 
-  background: url("../../img/icon-close.svg") center top no-repeat transparent;
+  background: url("../img/icon-close.svg") center top no-repeat transparent;
 }
 
 /**
@@ -105,7 +105,12 @@
  * Desktop
  */
 @media (min-width: $desktop) {
+  .nav__list {
+    max-width: 600px;
+  }
+
   .nav__item {
+    margin-bottom: 10px;
     margin-right: 34px;
   }
 

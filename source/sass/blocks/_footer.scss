@@ -62,7 +62,7 @@
 
 .footer__socials {
   width: 100%;
-  padding: 17px 0;
+  padding: 22px 0;
   margin: 0;
   justify-content: center;
 
@@ -73,7 +73,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 22px 0;
+  padding: 14px 0;
   width: 100%;
 }
 
@@ -82,7 +82,7 @@
  */
 @media (min-width: $tablet) {
   .footer--home {
-    padding-top: 8px;
+    padding-top: 4px;
   }
 
   .footer .logo__image {
@@ -117,7 +117,7 @@
   }
 
   .footer__link {
-    margin-top: 43px;
+    margin-top: 34px;
   }
 
   .footer__socials {
@@ -153,6 +153,7 @@
 
   .footer__address {
     position: absolute;
+    z-index: 1;
     top: 94px;
     left: 39px;
 
@@ -169,5 +170,9 @@
 
   .footer__box .container {
     position: relative;
+  }
+
+  .footer__link {
+    margin-top: 46px;
   }
 }

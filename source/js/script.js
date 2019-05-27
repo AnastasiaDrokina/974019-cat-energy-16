@@ -3,6 +3,7 @@ var navToggle = document.querySelector('.nav__toggle');
 var map = document.querySelector('.map__js');
 
 navMain.classList.remove('nav--nojs');
+navToggle.classList.remove('nav__toggle--opened');
 
 navToggle.addEventListener('click', function() {
   if (navToggle.classList.contains('nav__toggle--opened')) {
