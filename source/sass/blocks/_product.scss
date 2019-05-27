@@ -69,7 +69,8 @@
     width: 31px;
     height: 31px;
 
-    background: url("../img/icon-plus-mobile.svg") center top no-repeat transparent;
+    background: url("../img/icon-plus-mobile.svg") center top no-repeat
+      transparent;
     opacity: 0.2;
   }
 
@@ -109,7 +110,7 @@
   }
 
   .product__description {
-    margin-bottom: 22px;
+    margin-bottom: 18px;
   }
 
   .product__title {
@@ -128,7 +129,7 @@
   .product__image {
     position: absolute;
     left: 50%;
-    bottom: 309px;
+    bottom: 305px;
 
     margin: 0 0 0 -162px;
     width: auto;

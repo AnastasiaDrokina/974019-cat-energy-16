@@ -289,9 +289,8 @@
 .form__radio:focus + .form__label,
 .form__checkbox:focus + .form__label {
   outline: 1px solid #4d90fe;
-  box-shadow: 0 0 5px  #4d90fe;
+  box-shadow: 0 0 5px #4d90fe;
 }
-
 
 /**
  * Tablet
@@ -325,18 +324,20 @@
     padding-bottom: 51px;
 
     .form__legend {
-      margin-bottom: 78px;
+      margin-bottom: 85px;
     }
   }
 
   .form__fieldset--four {
+    padding-bottom: 25px;
+
     .form__legend {
       margin-bottom: 60px;
     }
   }
 
   .form__legend {
-    margin-bottom: 75px;
+    margin-bottom: 84px;
 
     font-size: 36px;
 
@@ -349,7 +350,7 @@
   .form__subtitle {
     max-width: none;
     margin-left: 7px;
-    padding: 0 30px;
+    padding: 0 44px 0 30px;
   }
 
   .form__wrapper {
@@ -358,7 +359,7 @@
   }
 
   .form__column + .form__column {
-    margin-top: 67px;
+    margin-top: 72px;
   }
 
   .form__field {
@@ -406,14 +407,13 @@
     display: flex;
     padding-left: 20px;
 
-
     .form__column {
       width: 50%;
       padding: 0 30px;
 
       &:first-child {
         padding-left: 0;
-        padding-right: 50px;
+        padding-right: 41px;
       }
 
       &:last-child {
@@ -426,8 +426,8 @@
     }
 
     .button {
-      padding-top: 20px;
-      padding-bottom: 20px;
+      padding-top: 16px;
+      padding-bottom: 16px;
       font-size: 20px;
     }
   }
@@ -528,11 +528,11 @@
   }
 
   .form__fieldset--one {
-    padding-bottom: 50px;
+    padding-bottom: 55px;
   }
 
   .form__fieldset--two {
-    padding-bottom: 45px;
+    padding-bottom: 53px;
 
     .form__legend {
       margin-bottom: 82px;
@@ -544,14 +544,14 @@
   }
 
   .form__fieldset--three {
-    padding-bottom: 54px;
+    padding-bottom: 50px;
   }
 
   .form__fieldset--four {
     padding-bottom: 30px;
 
     .form__legend {
-      margin-bottom: 57px;
+      margin-bottom: 64px;
     }
 
     .form__column,

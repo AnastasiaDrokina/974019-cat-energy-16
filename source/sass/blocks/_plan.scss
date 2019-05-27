@@ -86,7 +86,8 @@
     margin-left: 12px;
     vertical-align: baseline;
 
-    background: url("../img/icon-right-arrow-long.svg") center top no-repeat transparent;
+    background: url("../img/icon-right-arrow-long.svg") center top no-repeat
+      transparent;
   }
 
   &:hover::after {
@@ -148,7 +149,7 @@
   .plan__link {
     font-size: 20px;
     line-height: 20px;
-    margin-top: 37px;
+    margin-top: 40px;
 
     &::after {
       margin-left: 21px;
@@ -191,7 +192,6 @@
 
   .plan__title {
     position: relative;
-
 
     &::before {
       content: " ";
