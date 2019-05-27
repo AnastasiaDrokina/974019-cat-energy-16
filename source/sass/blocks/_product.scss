@@ -103,10 +103,6 @@
     border: none;
   }
 
-  .product--more {
-    padding: 40px;
-  }
-
   .product__wrapper {
     flex-direction: column;
 
@@ -154,6 +150,7 @@
   }
 
   .product--more {
+    padding: 40px;
     justify-content: flex-start;
     background: none;
     border: $border;
